@@ -1,5 +1,5 @@
 
-(require 'matcher)
+(require 'search.matcher)
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
 
