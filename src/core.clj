@@ -1,5 +1,7 @@
 (require 'file2)
 (require 'opsearch)
+(require 'planner)
+(require 'astar)
 
 (println "CORE FILE LOADED")
 
