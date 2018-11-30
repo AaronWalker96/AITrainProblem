@@ -35,6 +35,9 @@
 ;    push( expand op , goal-stack )
 ;    push-all( expand (:post op), goal-stack )
 
+(require 'search.matcher)
+(require '[clojure.set :refer :all])
+(require '[clojure.pprint :refer :all])
 
 (defn ui-out [& stuff]
   (println stuff))
