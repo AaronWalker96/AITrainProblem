@@ -11,7 +11,7 @@
 ;  :when   ( (at ?x ?sx) (at ?y ?sy) (:guard (not= (? sx) (? sy))) )
 ;  :post   ( (protected ?sx) (protected ?sy)
 ;            (cleartop ?x)
-;            (cleartop ?y)
+;            (cleartop ?y)L
 ;            (hand empty) )
 ;  :pre ()
 ;  :del ( (at ?x ?sx)
