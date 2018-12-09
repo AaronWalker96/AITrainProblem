@@ -165,6 +165,90 @@
     )
   )
 
+(defn Dijkstra [state]
+
+  (let [n (:state state)
+
+        c (:cost state)
+
+        ]
+
+    (cond
+      (= n 'a) (list
+
+                 {:state 'b, :cost (+ c 3)}
+
+                 {:state 'c, :cost (+ c 2)}
+
+                 {:state 'e, :cost (+ c 4)}
+
+                 )
+      (= n 'b) (list
+                 {:state 'a, :cost (+ c 3)}
+
+                 {:state 'c, :cost (+ c 2)}
+
+                 {:state 'd, :cost (+ c 2)}
+
+                 )
+      (= n 'c) (list
+
+                 {:state 'a, :cost (+ c 2)}
+
+                 {:state 'b, :cost (+ c 2)}
+
+                 {:state 'd, :cost (+ c 2)}
+
+                 {:state 'f, :cost (+ c 3)}
+
+                 )
+      (= n 'd) (list
+
+                 {:state 'b, :cost (+ c 2)}
+
+                 {:state 'h, :cost (+ c 6)}
+
+                 {:state 'c, :cost (+ c 2)}
+
+                 )
+      (= n 'e) (list
+
+                 {:state 'a, :cost (+ c 4)}
+
+                 {:state 'f, :cost (+ c 2)}
+
+                 {:state 'g, :cost (+ c 2)}
+
+                 )
+      (= n 'f) (list
+
+                 {:state 'c, :cost (+ c 3)}
+
+                 {:state 'e, :cost (+ c 2)}
+
+                 {:state 'g, :cost (+ c 3)}
+
+                 )
+      (= n 'g) (list
+
+                 {:state 'e, :cost (+ c 2)}
+
+                 {:state 'f, :cost (+ c 3)}
+
+                 {:state 'h, :cost (+ c 5)}
+
+                 )
+      (= n 'h) (list
+
+                 {:state 'g, :cost (+ c 5)}
+
+                 {:state 'd, :cost (+ c 6)}
+
+                 )
+      )
+    )
+  )
+
 ;;(A*search {:state 'a, :cost 0} (fn [x] (= x 'e)) a*lmg-map)
 
 (defn stateAdapter [plannerOutput]
