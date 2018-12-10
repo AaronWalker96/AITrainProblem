@@ -14,35 +14,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lift_example.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/search/opsearch.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/search/planner.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="687">
+              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+              <folding>
+                <element signature="e#1098#1295#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +26,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/search/matcher.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/search/planner.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -78,7 +63,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -102,6 +86,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,7 +94,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="ReplState" timestamp="1543945063946">{:repl-history {:ide [], :local [{:command &quot;(planner start-state '(at C1 S1) ops-alt)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner start-state '(at C1 S1) ops)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops-alt)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas C1 S1)) ops-alt)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationTwo)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationOne)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(ops-search start-state '((on Usr1 Flr3) (on Usr2 Flr1)) ops :world world-state)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(planner ss3b '((cas llama london)) ops3)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama london) ops3)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama edin) ops3)&quot;, :offset 37, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1544435112561">{:repl-history {:ide [], :local [{:command &quot;(planner start-state '(at C1 S1) ops-alt)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner start-state '(at C1 S1) ops)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops-alt)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas C1 S1)) ops-alt)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationTwo)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationOne)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(ops-search start-state '((on Usr1 Flr3) (on Usr2 Flr1)) ops :world world-state)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(planner ss3b '((cas llama london)) ops3)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama edin) ops3)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(def ops\n  '{\n    :unload\n    {:name unload\n     :achieves (at ?stuff ?stn)\n     :when ((isa ?t train))\n     :post ((cot ?stuff ?t)(at ?t ?stn))\n     :pre ()\n     :del ( (cot ?stuff ?t))\n     :add ((at ?stuff ?stn))\n     :cmd ((drop ?stuff)  )\n     :txt ((?t drops ?stuff at ?stn) )\n     }\n    :load\n    {:name load\n     :achieves (cot ?stuff ?t)\n     :when ((at ?stuff ?stn))\n     :post ((at ?t ?stn))\n     :pre ()\n     :del ((at ?stuff ?stn) )\n     :add ((cot ?stuff ?t) )\n     :cmd ((pickup ?stuff))\n     :txt ((?stuff picked up at ?stn by ?t))\n     }\n    :move\n    {:name move\n     :achieves (at ?t ?dst)\n     :when ((at ?t ?src))\n     :post ()\n     :pre ()\n     :del ((at ?t ?src))\n     :add ((at ?t ?dst))\n     :cmd ((move ?t to ?dst))\n     :txt ((?t moves to ?dst from ?src))\n     }\n    }\n  )&quot;, :offset 799, :ns &quot;user&quot;} {:command &quot;(def ss3b\n  '#{(station london)\n     (station newcastle)\n     (station edinburgh)\n     (station berwick)\n     (station sunderland)\n     (station middlesbrough)\n     (station glasgow)\n     (isa ncl-exp train)\n     (isa scotrail train)\n     (at ncl-exp london)\n     (at scotrail glasgow)\n     (at llamaKeith ncl)\n     (at llamaJeff berwick)\n\n\n     })&quot;, :offset 348, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llamakeith london) ops)&quot;, :offset 42, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llama london) ops3)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama london) ops3)&quot;, :offset 39, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -177,8 +162,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" id="REPL" order="4" sideWeight="0.8670954" side_tool="true" visible="true" weight="0.32356077" />
-      <window_info anchor="right" id="Leiningen" order="5" sideWeight="0.1329046" visible="true" weight="0.32356077" />
+      <window_info active="true" anchor="right" x="854" y="245" width="963" height="580" id="REPL" order="4" sideWeight="0.86904764" side_tool="true" type="FLOATING" visible="true" weight="0.45514223" />
+      <window_info anchor="right" id="Leiningen" order="5" sideWeight="0.13095239" weight="0.45514223" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
     <layout-to-restore>
@@ -241,22 +226,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/search/matcher.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/search/planner.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="221">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="45" />
+        <state relative-caret-position="687">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#1098#1295#0" />
+          </folding>
         </state>
       </provider>
     </entry>

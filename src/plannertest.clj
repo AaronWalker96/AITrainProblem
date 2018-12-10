@@ -12,22 +12,9 @@
      (isa ncl-exp train)
      (tas ncl-exp london)
      (cas llama ncl)
-
-     (travable london ncl)
-     (travable ncl london)
-
-     (travable london duram)
-     (travable duram london)
-
-     (travable duram sunder)
-     (travable sunder duram)
-
-     (travable edin sunder)
-     (travable sunder edin)
-
      })
 
-(def ops3
+(def ops
   '{
     :unload
     {:name unload
@@ -37,7 +24,7 @@
      :pre ()
      :del ( (cot ?stuff ?t))
      :add ((cas ?stuff ?stn))
-     :cmd ((drop ?stuff)  )
+     :cmd ((drop ?stuff))
      :txt ((?t drops ?stuff at ?stn) )
      }
     :load
@@ -54,16 +41,128 @@
     :move
     {:name move
      :achieves (tas ?t ?dst)
-     :when ((tas ?t ?src)(travable ?src ?dst))
+     :when ((tas ?t ?src))
      :post ()
      :pre ()
      :del ((tas ?t ?src))
      :add ((tas ?t ?dst))
-     :cmd ((move ?t to ?dst))
+     :cmd ((move ?t ?dst ?src))
      :txt ((?t moves to ?dst from ?src))
      }
     }
   )
-;(planner start-state '((cas cargoOne stationOne)) ops-alt)
-;(planner ss3b '(cas llama edin) ops3)
+
+(def ss-one
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-three)
+     })
+
+(def ss-two
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-one)
+     })
+
+(def ss-three
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (station station-five)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-two)
+     })
+
+(def ss-four
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-three)
+     (cas cargo-two station-four)
+     })
+
+(def ss-five
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (station station-five)
+     (isa train-one train)
+     (isa train-two train)
+     (tas train-one station-one)
+     (tas train-two station-five)
+     (cas cargo-one station-two)
+     (cas cargo-two station-four)
+     })
+
+(def ss-six
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (station station-five)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-three)
+     (cas cargo-two station-four)
+     })
+
+(def ss-seven
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (isa train-one train)
+     (tas train-one station-three)
+     (cas cargo-one station-one)
+     })
+
+(def ss-eight
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (station station-five)
+     (cas cargo-one station-three)
+     })
+
+(def ss-nine
+  '#{(station station-one)
+     (station station-two)
+     (station station-three)
+     (station station-four)
+     (station station-five)
+     (station station-six)
+     (station station-seven)
+     (station station-eight)
+     (station station-nine)
+     (station station-ten)
+     (station station-eleven)
+     (station station-twelve)
+     (isa train-one train)
+     (tas train-one station-one)
+     (cas cargo-one station-twelve)
+     })
+
+
+;(planner ss-one '(cas cargo-one station-two ) ops)
+;(planner ss-two '(cas cargo-one station-two ) ops)
+;(planner ss-three '(cas cargo-one station-four ) ops)
+;(planner (:state (planner ss-four '(cas cargo-one station-two) ops)) '(cas cargo-two station-two) ops)
+;(planner (:state (planner ss-five '(cas cargo-one station-four) ops)) '(cas cargo-two station-two) ops)
+;(planner (:state (planner ss-six '(cas cargo-one station-two) ops)) '(cas cargo-two station-five) ops)
+;(planner ss-seven '(cas cargo-one station-one) ops)
+;(planner ss-eight '(cas cargo-one station-four) ops)
+;(planner ss-nine '(cas cargo-one station-eleven) ops)
 
