@@ -472,12 +472,88 @@
 
                  )
       (= n '12) (list
-                 {:state '10, :cost (+ c 3)}
+                 {:state '10
+                         , :cost (+ c 3)}
 
                  )
       )
     )
   )
+
+;;====================== Map 7 ========================
+
+(defn map10 [state]
+
+  (let [n (:state state)
+
+        c (:cost state)
+
+        ]
+
+    (cond
+      (= n 's) (list
+
+                 {:state 'a, :cost (+ c 4)}
+
+                 {:state 'e, :cost (+ c 5)}
+
+                 {:state 'f, :cost (+ c 6.4)}
+
+                 )
+      (= n 'a) (list
+                 {:state 'b, :cost (+ c 2.2)}
+
+                 )
+      (= n 'b) (list
+
+                 {:state 'c, :cost (+ c 3.6)}
+
+                 )
+      (= n 'c) (list
+
+                 {:state 'd, :cost (+ c 5)}
+
+                 )
+      (= n 'd) (list
+
+                 {:state 'c, :cost (+ c 5)}
+
+                 {:state 'end, :cost (+ c 5)}
+
+                 )
+      (= n 'e) (list
+
+                 {:state 'g, :cost (+ c 2.8)}
+
+                 )
+      (= n 'f) (list
+
+                 {:state 'g, :cost (+ c 2.8)}
+
+                 {:state 'i, :cost (+ c 2.8)}
+
+                 )
+      (= n 'g) (list
+
+                 {:state 'f, :cost (+ c 2.8)}
+
+                 {:state 'h, :cost (+ c 3.6)}
+
+                 )
+      (= n 'h) (list
+
+                 {:state 'end, :cost (+ c 4)}
+
+                 )
+      (= n 'i) (list
+
+                 {:state 'd, :cost (+ c 2.8)}
+
+                 )
+      )
+    )
+  )
+
 
 ;;====================== Testing ========================
 
@@ -712,90 +788,30 @@
     )
   )
 
-(defn test-D [state]
-
-  (let [n (:state state)
-
-        c (:cost state)
-
-        ]
-
-    (cond
-      (= n 's) (list
-
-                 {:state 'a, :cost (+ c 4)}
-
-                 {:state 'e, :cost (+ c 5)}
-
-                 {:state 'f, :cost (+ c 6.4)}
-
-                 )
-      (= n 'a) (list
-                 {:state 'b, :cost (+ c 2.2)}
-
-                 )
-      (= n 'b) (list
-
-                 {:state 'c, :cost (+ c 3.6)}
-
-                 )
-      (= n 'c) (list
-
-                 {:state 'd, :cost (+ c 5)}
-
-                 )
-      (= n 'd) (list
-
-                 {:state 'c, :cost (+ c 5)}
-
-                 {:state 'end, :cost (+ c 5)}
-
-                 )
-      (= n 'e) (list
-
-                 {:state 'g, :cost (+ c 2.8)}
-
-                 )
-      (= n 'f) (list
-
-                 {:state 'g, :cost (+ c 2.8)}
-
-                 {:state 'i, :cost (+ c 2.8)}
-
-                 )
-      (= n 'g) (list
-
-                 {:state 'f, :cost (+ c 2.8)}
-
-                 {:state 'h, :cost (+ c 3.6)}
-
-                 )
-      (= n 'h) (list
-
-                 {:state 'end, :cost (+ c 4)}
-
-                 )
-      (= n 'i) (list
-
-                 {:state 'd, :cost (+ c 2.8)}
-
-                 )
-      )
-    )
-  )
 
 ;;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)
 
+;(defn stateAdapter [plannerOutput]
+;  (let [startState (nth (clojure.string/split plannerOutput #",") 0)
+;        startState (clojure.string/replace startState #"StartState: " "")
+;        goalState (nth (clojure.string/split plannerOutput #",") 1)
+;        goalState (clojure.string/replace goalState #" GoalState: " "")
+;        ]
+;
+;    (str "{:state '" startState ", :cost 0} (fn [x] (= x '" goalState "))")
+;  )
+;)
+
 (defn stateAdapter [plannerOutput]
-  (let [startState (nth (clojure.string/split plannerOutput #",") 0)
-        startState (clojure.string/replace startState #"StartState: " "")
-        goalState (nth (clojure.string/split plannerOutput #",") 1)
-        goalState (clojure.string/replace goalState #" GoalState: " "")
+  (let [move (nth (clojure.string/split plannerOutput #"move") 1)
+        startState (nth (clojure.string/split move #" ") 3)
+        goalState (nth (clojure.string/split move #" ") 2)
+        numMoves (count (clojure.string/split plannerOutput #"move"))
+
         ]
 
-    (str "{:state '" startState ", :cost 0} (fn [x] (= x '" goalState "))")
+    (str "{:state '" startState ", :cost 0} (fn [x] (= x '" goalState ")) " numMoves)
   )
 )
 
-
-
+;((move train-one station-three station-one) (pickup cargo-one) (move train-one station-two station-three) (drop cargo-one))
