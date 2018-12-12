@@ -11,14 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-              <folding>
-                <element signature="e#1098#1295#0" />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="150" column="29" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -26,8 +23,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/search/matcher.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="357">
+              <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ourastarsearch.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="804" column="31" selection-start-line="804" selection-start-column="31" selection-end-line="804" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -35,27 +50,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/search/planner.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="330">
+              <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cmds</find>
+      <find>update-path</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/search/planner.clj" />
         <option value="$PROJECT_DIR$/src/search/matcher.clj" />
+        <option value="$PROJECT_DIR$/src/search/planner.clj" />
         <option value="$PROJECT_DIR$/src/plannertest.clj" />
+        <option value="$PROJECT_DIR$/src/ourastarsearch.clj" />
+        <option value="$PROJECT_DIR$/src/core.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="width" value="975" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
@@ -64,6 +87,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,7 +110,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -94,7 +117,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="ReplState" timestamp="1544435112561">{:repl-history {:ide [], :local [{:command &quot;(planner start-state '(at C1 S1) ops-alt)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner start-state '(at C1 S1) ops)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops-alt)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas C1 S1)) ops-alt)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationTwo)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationOne)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(ops-search start-state '((on Usr1 Flr3) (on Usr2 Flr1)) ops :world world-state)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(planner ss3b '((cas llama london)) ops3)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama edin) ops3)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(def ops\n  '{\n    :unload\n    {:name unload\n     :achieves (at ?stuff ?stn)\n     :when ((isa ?t train))\n     :post ((cot ?stuff ?t)(at ?t ?stn))\n     :pre ()\n     :del ( (cot ?stuff ?t))\n     :add ((at ?stuff ?stn))\n     :cmd ((drop ?stuff)  )\n     :txt ((?t drops ?stuff at ?stn) )\n     }\n    :load\n    {:name load\n     :achieves (cot ?stuff ?t)\n     :when ((at ?stuff ?stn))\n     :post ((at ?t ?stn))\n     :pre ()\n     :del ((at ?stuff ?stn) )\n     :add ((cot ?stuff ?t) )\n     :cmd ((pickup ?stuff))\n     :txt ((?stuff picked up at ?stn by ?t))\n     }\n    :move\n    {:name move\n     :achieves (at ?t ?dst)\n     :when ((at ?t ?src))\n     :post ()\n     :pre ()\n     :del ((at ?t ?src))\n     :add ((at ?t ?dst))\n     :cmd ((move ?t to ?dst))\n     :txt ((?t moves to ?dst from ?src))\n     }\n    }\n  )&quot;, :offset 799, :ns &quot;user&quot;} {:command &quot;(def ss3b\n  '#{(station london)\n     (station newcastle)\n     (station edinburgh)\n     (station berwick)\n     (station sunderland)\n     (station middlesbrough)\n     (station glasgow)\n     (isa ncl-exp train)\n     (isa scotrail train)\n     (at ncl-exp london)\n     (at scotrail glasgow)\n     (at llamaKeith ncl)\n     (at llamaJeff berwick)\n\n\n     })&quot;, :offset 348, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llamakeith london) ops)&quot;, :offset 42, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llama london) ops3)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama london) ops3)&quot;, :offset 39, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1544614134372">{:repl-history {:ide [], :local [{:command &quot;(planner start-state '(at C1 S1) ops-alt)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner start-state '(at C1 S1) ops)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner start-state '((at C1 S1)) ops-alt)&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas C1 S1)) ops-alt)&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationTwo)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(planner start-state '((cas cargoOne stationOne)) ops-alt)&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(ops-search start-state '((on Usr1 Flr3) (on Usr2 Flr1)) ops :world world-state)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(planner ss3b '((cas llama london)) ops3)&quot;, :offset 41, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama edin) ops3)&quot;, :offset 37, :ns &quot;user&quot;} {:command &quot;(def ops\n  '{\n    :unload\n    {:name unload\n     :achieves (at ?stuff ?stn)\n     :when ((isa ?t train))\n     :post ((cot ?stuff ?t)(at ?t ?stn))\n     :pre ()\n     :del ( (cot ?stuff ?t))\n     :add ((at ?stuff ?stn))\n     :cmd ((drop ?stuff)  )\n     :txt ((?t drops ?stuff at ?stn) )\n     }\n    :load\n    {:name load\n     :achieves (cot ?stuff ?t)\n     :when ((at ?stuff ?stn))\n     :post ((at ?t ?stn))\n     :pre ()\n     :del ((at ?stuff ?stn) )\n     :add ((cot ?stuff ?t) )\n     :cmd ((pickup ?stuff))\n     :txt ((?stuff picked up at ?stn by ?t))\n     }\n    :move\n    {:name move\n     :achieves (at ?t ?dst)\n     :when ((at ?t ?src))\n     :post ()\n     :pre ()\n     :del ((at ?t ?src))\n     :add ((at ?t ?dst))\n     :cmd ((move ?t to ?dst))\n     :txt ((?t moves to ?dst from ?src))\n     }\n    }\n  )&quot;, :offset 799, :ns &quot;user&quot;} {:command &quot;(def ss3b\n  '#{(station london)\n     (station newcastle)\n     (station edinburgh)\n     (station berwick)\n     (station sunderland)\n     (station middlesbrough)\n     (station glasgow)\n     (isa ncl-exp train)\n     (isa scotrail train)\n     (at ncl-exp london)\n     (at scotrail glasgow)\n     (at llamaKeith ncl)\n     (at llamaJeff berwick)\n\n\n     })&quot;, :offset 348, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llamakeith london) ops)&quot;, :offset 42, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(at llama london) ops3)&quot;, :offset 38, :ns &quot;user&quot;} {:command &quot;(planner ss3b '(cas llama london) ops3)&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(planner ss-four '((cas cargo-one station-two )(cas cargo-two station-two)) ops)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(planner (:state (planner ss-four '(cas cargo-one station-four) ops)) '(cas cargo-two station-two) ops)&quot;, :offset 103, :ns &quot;user&quot;} {:command &quot;(planner (:state (planner ss-four '(cas cargo-one station-three) ops)) '(cas cargo-two station-two) ops)&quot;, :offset 104, :ns &quot;user&quot;} {:command &quot;(planner (:state (planner ss-five '(cas cargo-one station-four) ops)) '(cas cargo-two station-two) ops)&quot;, :offset 103, :ns &quot;user&quot;} {:command &quot;(planner (:state (planner ss-six '(cas cargo-one station-two) ops)) '(cas cargo-two station-five) ops)&quot;, :offset 102, :ns &quot;user&quot;} {:command &quot;(planner ss-seven '(cas cargo-one station-one) ops)&quot;, :offset 51, :ns &quot;user&quot;} {:command &quot;(planner ss-eight '(cas cargo-one station-four) ops)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(A*search {:state '1, :cost 0} (fn [x] (= x '3)) map1)&quot;, :offset 54, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(planner ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(:cmd (planner ss-one '(cas cargo-one station-two ) ops))&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(stateAdapter (:cmd (planner ss-one '(cas cargo-one station-two ) ops)))&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(:cmd (planner ss-four0 '((cas cargo-one station-two)(cas cargo-two station-two)) ops))&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(planner ss-two '(cas cargo-one station-two ) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(planner ss-three '(cas cargo-one station-four ) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(planner (:state (planner ss-four '(cas cargo-one station-two) ops)) '(cas cargo-two station-two) ops)&quot;, :offset 102, :ns &quot;user&quot;} {:command &quot;(:cmds (planner ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops))&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(:cmd (planner ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops))&quot;, :offset 86, :ns &quot;user&quot;} {:command &quot;(planner ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 79, :ns &quot;user&quot;} {:command &quot;(planner ss-nine '(cas cargo-one station-eleven) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(planner ss-nine '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(plan-goals ss-nine '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 83, :ns &quot;user&quot;} {:command &quot;(plan-goals ss-four '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 83, :ns &quot;user&quot;} {:command &quot;(plan-goals ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 82, :ns &quot;user&quot;} {:command &quot;(stateAdapter ((move train-one station-three station-one)\n                (pickup cargo-one)\n                (move train-one station-two station-three)\n                (drop cargo-one)\n                (move train-one station-four station-two)\n                (pickup cargo-two)\n                (move train-one station-two station-four)\n                (drop cargo-two)))&quot;, :offset 370, :ns &quot;user&quot;} {:command &quot;(stateAdapter \&quot;((move train-one station-three station-one)\\n       (pickup cargo-one)\\n       (move train-one station-two station-three)\\n       (drop cargo-one)\\n       (move train-one station-four station-two)\\n       (pickup cargo-two)\\n       (move train-one station-two station-four)\\n       (drop cargo-two))\&quot;)&quot;, :offset 316, :ns &quot;user&quot;} {:command &quot;(startState \&quot;((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one))\&quot;)&quot;, :offset 135, :ns &quot;user&quot;} {:command &quot;(conj (empty? list) \&quot;Test\&quot;)&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(conj ((empty? list) \&quot;Test\&quot;)&quot;, :offset 20} {:command &quot;(conj (\&quot;\&quot;) \&quot;Test\&quot;)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(conj ((empty? list)) \&quot;Test\&quot;)&quot;, :offset 29, :ns &quot;user&quot;} {:command &quot;(stateAdapter \&quot;((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one))\&quot;)&quot;, :offset 137, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -140,9 +163,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.01119403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -162,7 +184,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" x="854" y="245" width="963" height="580" id="REPL" order="4" sideWeight="0.86904764" side_tool="true" type="FLOATING" visible="true" weight="0.45514223" />
+      <window_info active="true" anchor="right" x="874" y="140" width="963" height="441" id="REPL" order="4" sideWeight="0.86904764" side_tool="true" type="FLOATING" visible="true" weight="0.45514223" />
       <window_info anchor="right" id="Leiningen" order="5" sideWeight="0.13095239" weight="0.45514223" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
@@ -203,13 +225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lift_example.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -224,27 +239,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/search/matcher.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/search/planner.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="330">
+          <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#1098#1295#0" />
-          </folding>
+        <state relative-caret-position="500">
+          <caret line="150" column="29" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search/matcher.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ourastarsearch.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="804" column="31" selection-start-line="804" selection-start-column="31" selection-end-line="804" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

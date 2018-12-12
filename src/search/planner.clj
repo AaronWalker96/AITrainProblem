@@ -62,7 +62,7 @@
 (defn planner [state goal goal-ops]
   (.clear @goalq)
   (.push @goalq goal)
-  (strips-loop {:state state, :cmds nil, :txt nil} goal-ops 60))
+  (strips-loop {:state state, :cmd nil, :txt nil} goal-ops 60))
 
 
 (defn strips-loop
@@ -121,9 +121,17 @@
         ;(println (list 'succeeded (:name op)))
                   true))))
 
+(defn plan-goals [start all-goals ops]
+  (loop [plan {:state start, :cmd nil, :txt nil}
+         [g & goals :as all-goals] all-goals]
+    (if (empty? all-goals)
+      plan
+      (recur (update-path plan (planner (:state plan) g ops)) goals))))
+
+
 
 (defn update-path
   [current newp]
   {:state (:state newp)
-   :cmds  (concat (:cmds current) (:cmd newp))
+   :cmd  (concat (:cmd current) (:cmd newp))
    :txt   (concat (:txt current) (:txt newp))})

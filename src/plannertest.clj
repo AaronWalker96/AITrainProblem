@@ -166,3 +166,4 @@
 ;(planner ss-eight '(cas cargo-one station-four) ops)
 ;(planner ss-nine '(cas cargo-one station-eleven) ops)
 
+;(planner ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)
