@@ -75,14 +75,14 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 3)}
+                 {:state 'station-two, :cost (+ c 3)}
 
 
                  )
       (= n '2) (list
-                 {:state '1, :cost (+ c 3)}
+                 {:state 'station-one, :cost (+ c 3)}
 
                  {:state '3, :cost (+ c 3)}
 
@@ -199,25 +199,25 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 3.2)}
-
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 3.2)}
-
-                 {:state '3, :cost (+ c 3.6)}
-
-                 {:state '4, :cost (+ c 3.6)}
+                 {:state 'station-two, :cost (+ c 3.2)}
 
                  )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 3.6)}
+      (= n 'station-two) (list
+                 {:state 'station-one, :cost (+ c 3.2)}
+
+                 {:state 'station-three, :cost (+ c 3.6)}
+
+                 {:state 'station-four, :cost (+ c 3.6)}
 
                  )
-      (= n '4) (list
-                 {:state '2, :cost (+ c 3.6)}
+      (= n 'station-three) (list
+                 {:state 'station-two, :cost (+ c 3.6)}
+
+                 )
+      (= n 'station-four) (list
+                 {:state 'station-two, :cost (+ c 3.6)}
 
                  )
       )
@@ -802,16 +802,26 @@
 ;  )
 ;)
 
+(defn remove-last [str]
+  (.substring (java.lang.String. str) 0 (- (count str) 1))
+  )
+
 (defn stateAdapter [plannerOutput]
-  (let [move (nth (clojure.string/split plannerOutput #"move") 1)
-        startState (nth (clojure.string/split move #" ") 3)
-        goalState (nth (clojure.string/split move #" ") 2)
-        numMoves (count (clojure.string/split plannerOutput #"move"))
-
+  (let [numMoves (count (clojure.string/split plannerOutput #"move"))
+        count 2
         ]
-
-    (str "{:state '" startState ", :cost 0} (fn [x] (= x '" goalState ")) " numMoves)
+    (loop [x count end numMoves]
+      (when (<= x end)
+        (def move (nth (clojure.string/split plannerOutput #"move") (- x 1)))
+        (def startState (nth (clojure.string/split move #" ") 3))
+        (def goalState (nth (clojure.string/split move #" ") 2))
+        (def startState (apply str startState))
+        (println "{:state '"(clojure.string/trim (remove-last startState))", :cost 0} (fn [x] (= x '"goalState"))")
+        (recur (+ x 1) numMoves)))
   )
 )
 
+
+
 ;((move train-one station-three station-one) (pickup cargo-one) (move train-one station-two station-three) (drop cargo-one))
+;((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one))
