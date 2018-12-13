@@ -8,10 +8,14 @@
 ;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)
 ;(stateAdapter (:cmd (planner ss-one '(cas cargo-one station-two ) ops)))
 
+;(plan-route ss-one '(cas cargo-one station-two) map1)
 
-(defn plan-route [planner-ss]
+;;Plan-route is used with single goals
+;;Plan-route is used with multiple goals
+
+(defn plan-route [planner-ss goal a*map ]
   (let [
-        plannerout (plan planner-ss '(cas cargo-one station-two) ops)
+        plannerout (plan planner-ss goal ops)
         outputcmd (stateAdapter (apply str (:cmd plannerout)))
         ]
 
@@ -21,19 +25,36 @@
 
       (if (empty? current)
         (println  "Planner Results are: " po " A* Results are: " results)
-        (recur (rest current) (conj results (run-astar (first current))) po))
+        (recur (rest current) (conj results (run-astar a*map (first current))) po))
       )
     )
   )
 
-(defn run-astar [goals]
+(defn plan-route-multiple-goals [planner-ss goal a*map ]
+  (let [
+        plannerout (plan-multiple planner-ss goal ops)
+        outputcmd (stateAdapter (apply str (:cmd plannerout)))
+        ]
+
+    (println (:txt plannerout))
+
+    (loop [current outputcmd results [] po (:txt plannerout)]
+
+      (if (empty? current)
+        (println  "Planner Results are: " po " A* Results are: " results)
+        (recur (rest current) (conj results (run-astar a*map (first current))) po))
+      )
+    )
+  )
+
+(defn run-astar [a-map goals]
   (let
     [
      stations (clojure.string/split goals #",")
      ]
     (println (first stations))
     (println (first (rest stations)))
-    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) map1)
+    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) a-map)
     )
   )
 
