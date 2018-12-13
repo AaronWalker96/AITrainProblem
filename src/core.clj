@@ -70,7 +70,7 @@
 
 
 
-(defn planner-test-all-ss []
+(defn planner-test-small-ss []
   (println "Start-State-one"(:cmd (plan ss-one '(cas cargo-one station-two ) ops)))
   (println "Start-State-two" (:cmd (plan ss-two '(cas cargo-one station-two ) ops)))
   (println "Start-State-three" (:cmd (plan ss-three '(cas cargo-one station-four ) ops)))
@@ -80,6 +80,15 @@
   (println "Start-State-seven" (:cmd (plan ss-seven '(cas cargo-one station-one) ops)))
   (println "Start-State-eight" (:cmd (plan ss-eight '(cas cargo-one station-four) ops)))
   (println "Start-State-nine" (:cmd (plan ss-nine '(cas cargo-one station-eleven) ops)))
+  )
+  
+(defn planner-test-medium-ss []
+  (println "Start-State-ten"(:cmd (plan ss-ten '(cas cargo-one station-two ) ops)))
+  (println "Start-State-eleven" (:cmd (plan ss-eleven '(cas cargo-one station-two ) ops)))
+  )
+  
+(defn planner-test-large-ss []
+  (println "Start-State-twelve"(:cmd (plan-multiple ss-twelve '((cas llama station-newcastle)(cas scottish-notes station-edinburgh)(cas neds station-brighton)(cas sheep station-edinburgh)(cas brenda station-bristol)(cas cheese station-york) ) ops)))
   )
 
 (defn planner-scale-test-all-ss []
