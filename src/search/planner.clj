@@ -11,7 +11,7 @@
 ;  :when   ( (at ?x ?sx) (at ?y ?sy) (:guard (not= (? sx) (? sy))) )
 ;  :post   ( (protected ?sx) (protected ?sy)
 ;            (cleartop ?x)
-;            (cleartop ?y)L
+;            (cleartop ?y)
 ;            (hand empty) )
 ;  :pre ()
 ;  :del ( (at ?x ?sx)
@@ -39,8 +39,11 @@
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
 
-(defn ui-out [& stuff]
-  (println stuff))
+(defn ui-out [& body] )
+
+(defn ui-out [& body]
+  (doseq [b body] (print b) (print " "))
+  (println))
 
 
 (defn print-goals [q]
@@ -48,9 +51,11 @@
     (do
       (ui-out :dbg "GOALS:")
       (doseq [x q]
-        (ui-out :dbg "      " (if (map? x) [(:name x) :=> (:achieves x)] x)))
+        (ui-out :dbg "      " (if (map? x) [(:name x) :=> (:achieves x)] x))
+        )
       ;(ui-out :dbg '------)
-      )))
+      )
+    ))
 
 
 (def goalq (atom (java.util.concurrent.LinkedBlockingDeque.)))
@@ -59,9 +64,16 @@
 (declare strips-loop update-path
          goal-mop-apply apply-goal-op)
 
-(defn planner [state goal goal-ops]
+
+(defn plan [state goal goal-ops]
   (.clear @goalq)
   (.push @goalq goal)
+  (strips-loop {:state state, :cmd nil, :txt nil} goal-ops 60))
+
+
+(defn plan-multiple [state goals goal-ops]
+  (.clear @goalq)
+  (.addAll @goalq goals)
   (strips-loop {:state state, :cmd nil, :txt nil} goal-ops 60))
 
 
@@ -70,7 +82,7 @@
   (if (zero? limit)
     (throw (new RuntimeException "limit exceeded in run-goal-ops")))
 
-  ;(println path)
+  ; (println path)
   (print-goals @goalq)
 
   (if-let [goal (.poll @goalq)]
@@ -78,31 +90,39 @@
       (map? goal) ;; it is a partially matched op
       (do
         (ui-out :dbg '** 'APPLYING (:name goal) '=> (:achieves goal))
-       ; (ui-out :dbg '** (:add goal))
+        ; (ui-out :dbg '** (:add goal))
         (recur
-         (update-path path (goal-mop-apply (:state path) goal))
-         goal-ops (dec limit)))
+          (update-path path (goal-mop-apply (:state path) goal))
+          goal-ops (dec limit))
+        )
 
       ;; else it is a fact
       (not (contains? (:state path) goal))
       (do (ui-out :dbg 'solving goal)
           (some (partial apply-goal-op (:state path) goal)
                 (vals goal-ops))
-          (recur path goal-ops (dec limit)))
+          (recur path goal-ops (dec limit))
+          )
       ;; else it is an existing fact
       :else
-      (recur path goal-ops (dec limit)))
-    path))
+      (recur path goal-ops (dec limit))
+      )
+    path
+    )
+  )
 
 
 (defn goal-mop-apply [bd mop]
   (mfind* [(:pre mop) bd]
           (ui-out :dbg '** (mout (:add mop)))
-   ; (ui-out :dbg '=> (mout mop))
-          {:state (union (mout (:add mop))
-                         (difference bd (mout (:del mop))))
+          ; (ui-out :dbg '=> (mout mop))
+          ; (ui-out :dbg 'on bd)
+          {:state (set (union (mout (:add mop))
+                              (difference bd (mout (:del mop)))))
            :cmd   (mout (:cmd mop))
-           :txt   (mout (:txt mop))}))
+           :txt   (mout (:txt mop))
+           }
+          ))
 
 
 (defn apply-goal-op [bd goal op]
@@ -112,26 +132,26 @@
         (mfind* [(:when op) bd]
                 (ui-out :dbg 'using=> (:name op))
                 (let [mop (mout op)]
-        ;(println (list 'new-mop mop))
+                  ;(println (list 'new-mop mop))
                   (.push @goalq mop)
                   (ui-out :dbg 'new-goals (or (:post mop) '-none))
                   (doseq [p (reverse (:post mop))]
                     (.push @goalq p))
 
-        ;(println (list 'succeeded (:name op)))
-                  true))))
-
-(defn plan-goals [start all-goals ops]
-  (loop [plan {:state start, :cmd nil, :txt nil}
-         [g & goals :as all-goals] all-goals]
-    (if (empty? all-goals)
-      plan
-      (recur (update-path plan (planner (:state plan) g ops)) goals))))
-
+                  ;(println (list 'succeeded (:name op)))
+                  true
+                  ))
+        ))
 
 
 (defn update-path
   [current newp]
-  {:state (:state newp)
-   :cmd  (concat (:cmd current) (:cmd newp))
-   :txt   (concat (:txt current) (:txt newp))})
+  { :state (:state newp),
+   :cmd  (concat (:cmd current) (:cmd newp)),
+   :txt  (concat (:txt current) (:txt newp))
+   })
+
+
+
+
+

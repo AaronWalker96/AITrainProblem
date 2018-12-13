@@ -801,8 +801,9 @@
         (def move (nth (clojure.string/split formatted #"move") (- x 1)))
         (def startState (nth (clojure.string/split move #" ") 3))
         (def goalState (nth (clojure.string/split move #" ") 2))
-        (def startState (apply str startState))
-        (def  temp (apply str '(remove-last startState) "," goalState))
+        (def startState (remove-last (apply str startState)))
+
+        (def  temp (apply str  startState "," goalState))
 
         (recur (+ x 1) numMoves (conj result temp)))
       )
