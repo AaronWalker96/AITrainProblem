@@ -828,166 +828,166 @@
 
     (cond
       (= n 'station-plymouth) (list
-                 {:state 'station-exeter, :cost (+ c 11)}
+                 {:state 'station-exeter, :cost (+ c 4.5)}
                  )
                  
       (= n 'station-exeter) (list
-                 {:state 'station-plymouth, :cost (+ c 8)}
-                 {:state 'station-bristol, :cost (+ c 8)}
+                 {:state 'station-plymouth, :cost (+ c 4.5)}
+                 {:state 'station-bristol, :cost (+ c 5.7)}
                  )
                  
       (= n 'station-bristol) (list
-                 {:state 'station-exeter, :cost (+ c 8)}
-                 {:state 'station-cardiff, :cost (+ c 8)}
-                 {:state 'station-derby, :cost (+ c 8)}
-                 {:state 'station-swindon, :cost (+ c 8)}
-                 {:state 'station-southampton, :cost (+ c 8)}
+                 {:state 'station-exeter, :cost (+ c 5.7)}
+                 {:state 'station-cardiff, :cost (+ c 5.8)}
+                 {:state 'station-derby, :cost (+ c 15.2)}
+                 {:state 'station-swindon, :cost (+ c 4.2)}
+                 {:state 'station-southampton, :cost (+ c 6.7)}
                  )
                  
       (= n 'station-southampton) (list
-                 {:state 'station-bristol, :cost (+ c 10)}
-                 {:state 'station-brighton, :cost (+ c 10)}
+                 {:state 'station-bristol, :cost (+ c 6.7)}
+                 {:state 'station-brighton, :cost (+ c 5.1)}
                  )
                  
       (= n 'station-brighton) (list
-                 {:state 'station-southampton, :cost (+ c 4)}
-                 {:state 'station-london, :cost (+ c 4)}
+                 {:state 'station-southampton, :cost (+ c 5.1)}
+                 {:state 'station-london, :cost (+ c 8.2)}
                  )
                  
       (= n 'station-london) (list
-                 {:state 'station-brighton, :cost (+ c 4)}
-                 {:state 'station-swindon, :cost (+ c 4)}
-                 {:state 'station-coventry, :cost (+ c 4)}
-                 {:state 'station-leicester, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
-                 {:state 'station-norwich, :cost (+ c 4)}
+                 {:state 'station-brighton, :cost (+ c 8.2)}
+                 {:state 'station-swindon, :cost (+ c 10.0)}
+                 {:state 'station-coventry, :cost (+ c 8.5)}
+                 {:state 'station-leicester, :cost (+ c 9.2)}
+                 {:state 'station-peterborough, :cost (+ c 6.0)}
+                 {:state 'station-norwich, :cost (+ c 8.5)}
                  )
                  
       (= n 'station-swindon) (list
-                 {:state 'station-bristol, :cost (+ c 4)}
-                 {:state 'station-cardiff, :cost (+ c 4)}
-                 {:state 'station-birmingham, :cost (+ c 4)}
-                 {:state 'station-derby, :cost (+ c 4)}
-                 {:state 'station-london, :cost (+ c 4)}
+                 {:state 'station-bristol, :cost (+ c 4.2)}
+                 {:state 'station-cardiff, :cost (+ c 8.0)}
+                 {:state 'station-birmingham, :cost (+ c 9.2)}
+                 {:state 'station-derby, :cost (+ c 11.4)}
+                 {:state 'station-london, :cost (+ c 10.0)}
                  )
                  
       (= n 'station-cardiff) (list
-                 {:state 'station-swansea, :cost (+ c 4)}
-                 {:state 'station-liverpool, :cost (+ c 4)}
-                 {:state 'station-swindon, :cost (+ c 4)}
-                 {:state 'station-bristol, :cost (+ c 4)}
+                 {:state 'station-swansea, :cost (+ c 4.5)}
+                 {:state 'station-liverpool, :cost (+ c 21.0)}
+                 {:state 'station-swindon, :cost (+ c 8.0)}
+                 {:state 'station-bristol, :cost (+ c 5.8)}
                  )
                  
       (= n 'station-swansea) (list
-                 {:state 'station-cardiff, :cost (+ c 4)}
+                 {:state 'station-cardiff, :cost (+ c 4.5)}
                  )
                  
       (= n 'station-norwich) (list
-                 {:state 'station-london, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
+                 {:state 'station-london, :cost (+ c 8.5)}
+                 {:state 'station-peterborough, :cost (+ c 6.0)}
                  )
                  
       (= n 'station-peterborough) (list
-                 {:state 'station-leicester, :cost (+ c 4)}
-                 {:state 'station-nottingham, :cost (+ c 4)}
-                 {:state 'station-leeds, :cost (+ c 4)}
-                 {:state 'station-york, :cost (+ c 4)}
-                 {:state 'station-norwich, :cost (+ c 4)}
-                 {:state 'station-london, :cost (+ c 4)}
+                 {:state 'station-leicester, :cost (+ c 7.0)}
+                 {:state 'station-nottingham, :cost (+ c 4.2)}
+                 {:state 'station-leeds, :cost (+ c 13.3)}
+                 {:state 'station-york, :cost (+ c 16.0)}
+                 {:state 'station-norwich, :cost (+ c 6.0)}
+                 {:state 'station-london, :cost (+ c 6.0)}
                  )
                  
       (= n 'station-leicester) (list
-                 {:state 'station-stoke, :cost (+ c 4)}
-                 {:state 'station-derby, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
-                 {:state 'station-london, :cost (+ c 4)}
+                 {:state 'station-stoke, :cost (+ c 8.9)}
+                 {:state 'station-derby, :cost (+ c 4.0)}
+                 {:state 'station-peterborough, :cost (+ c 7.0)}
+                 {:state 'station-london, :cost (+ c 9.2)}
                  )
                  
       (= n 'station-coventry) (list
-                 {:state 'station-birmingham, :cost (+ c 4)}
-                 {:state 'station-london, :cost (+ c 4)}
+                 {:state 'station-birmingham, :cost (+ c 8.5)}
+                 {:state 'station-london, :cost (+ c 8.5)}
                  )
                  
       (= n 'station-birmingham) (list
-                 {:state 'station-wolverhampton, :cost (+ c 4)}
-                 {:state 'station-coventry, :cost (+ c 4)}
-                 {:state 'station-swindon, :cost (+ c 4)}
+                 {:state 'station-wolverhampton, :cost (+ c 3.0)}
+                 {:state 'station-coventry, :cost (+ c 8.5)}
+                 {:state 'station-swindon, :cost (+ c 9.2)}
                  )
                  
       (= n 'station-wolverhampton) (list
-                 {:state 'station-liverpool, :cost (+ c 4)}
-                 {:state 'station-birmingham, :cost (+ c 4)}
+                 {:state 'station-liverpool, :cost (+ c 11.2)}
+                 {:state 'station-birmingham, :cost (+ c 3.0)}
                  )
                  
       (= n 'station-derby) (list
-                 {:state 'station-bristol, :cost (+ c 4)}
-                 {:state 'station-sheffield, :cost (+ c 4)}
-                 {:state 'station-nottingham, :cost (+ c 4)}
-                 {:state 'station-leicester, :cost (+ c 4)}
-                 {:state 'station-swindon, :cost (+ c 4)}
+                 {:state 'station-bristol, :cost (+ c 15.2)}
+                 {:state 'station-sheffield, :cost (+ c 4.0)}
+                 {:state 'station-nottingham, :cost (+ c 4.1)}
+                 {:state 'station-leicester, :cost (+ c 4.0)}
+                 {:state 'station-swindon, :cost (+ c 11.4)}
                  )
                  
       (= n 'station-nottingham) (list
-                 {:state 'station-derby, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
+                 {:state 'station-derby, :cost (+ c 4.1)}
+                 {:state 'station-peterborough, :cost (+ c 4.2)}
                  )
                  
       (= n 'station-stoke) (list
-                 {:state 'station-manchester, :cost (+ c 4)}
-                 {:state 'station-leicester, :cost (+ c 4)}
+                 {:state 'station-manchester, :cost (+ c 5.0)}
+                 {:state 'station-leicester, :cost (+ c 8.9)}
                  )
                  
       (= n 'station-sheffield) (list
-                 {:state 'station-manchester, :cost (+ c 4)}
-                 {:state 'station-leeds, :cost (+ c 4)}
-                 {:state 'station-derby, :cost (+ c 4)}
+                 {:state 'station-manchester, :cost (+ c 6.4)}
+                 {:state 'station-leeds, :cost (+ c 6.4)}
+                 {:state 'station-derby, :cost (+ c 4.0)}
                  )
                  
       (= n 'station-liverpool) (list
-                 {:state 'station-cardiff, :cost (+ c 4)}
-                 {:state 'station-wolverhampton, :cost (+ c 4)}
-                 {:state 'station-manchester, :cost (+ c 4)}
+                 {:state 'station-cardiff, :cost (+ c 21.0)}
+                 {:state 'station-wolverhampton, :cost (+ c 11.2)}
+                 {:state 'station-manchester, :cost (+ c 7.1)}
                  )
                  
       (= n 'station-manchester) (list
-                 {:state 'station-liverpool, :cost (+ c 4)}
-                 {:state 'station-preston, :cost (+ c 4)}
-                 {:state 'station-leeds, :cost (+ c 4)}
-                 {:state 'station-sheffield, :cost (+ c 4)}
-                 {:state 'station-stoke, :cost (+ c 4)}
+                 {:state 'station-liverpool, :cost (+ c 7.1)}
+                 {:state 'station-preston, :cost (+ c 5.0)}
+                 {:state 'station-leeds, :cost (+ c 8.0)}
+                 {:state 'station-sheffield, :cost (+ c 6.4)}
+                 {:state 'station-stoke, :cost (+ c 5.0)}
                  )
                  
       (= n 'station-leeds) (list
-                 {:state 'station-manchester, :cost (+ c 4)}
-                 {:state 'station-york, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
-                 {:state 'station-sheffield, :cost (+ c 4)}
+                 {:state 'station-manchester, :cost (+ c 8.0)}
+                 {:state 'station-york, :cost (+ c 3.6)}
+                 {:state 'station-peterborough, :cost (+ c 13.3)}
+                 {:state 'station-sheffield, :cost (+ c 6.4)}
                  )
                  
       (= n 'station-preston) (list
-                 {:state 'station-manchester, :cost (+ c 4)}
-                 {:state 'station-glasgow, :cost (+ c 4)}
+                 {:state 'station-manchester, :cost (+ c 5.0)}
+                 {:state 'station-glasgow, :cost (+ c 13.6)}
                  )
                  
       (= n 'station-york) (list
-                 {:state 'station-newcastle, :cost (+ c 4)}
-                 {:state 'station-peterborough, :cost (+ c 4)}
-                 {:state 'station-leeds, :cost (+ c 4)}
+                 {:state 'station-newcastle, :cost (+ c 7.6)}
+                 {:state 'station-peterborough, :cost (+ c 13.3)}
+                 {:state 'station-leeds, :cost (+ c 3.6)}
                  )
                  
       (= n 'station-newcastle) (list
-                 {:state 'station-york, :cost (+ c 4)}
-                 {:state 'station-edinburgh, :cost (+ c 4)}
+                 {:state 'station-york, :cost (+ c 7.6)}
+                 {:state 'station-edinburgh, :cost (+ c 9.2)}
                  )
                  
       (= n 'station-edinburgh) (list
-                 {:state 'station-newcastle, :cost (+ c 4)}
-                 {:state 'station-glasgow, :cost (+ c 4)}
+                 {:state 'station-newcastle, :cost (+ c 9.2)}
+                 {:state 'station-glasgow, :cost (+ c 8.0)}
                  )
                  
       (= n 'station-glasgow) (list
-                 {:state 'station-edinburgh, :cost (+ c 4)}
-                 {:state 'station-preston, :cost (+ c 4)}
+                 {:state 'station-edinburgh, :cost (+ c 8.0)}
+                 {:state 'station-preston, :cost (+ c 13.6)}
                  )
       )
     )
