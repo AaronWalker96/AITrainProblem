@@ -81,3 +81,23 @@
   (println "Start-State-eight" (:cmd (plan ss-eight '(cas cargo-one station-four) ops)))
   (println "Start-State-nine" (:cmd (plan ss-nine '(cas cargo-one station-eleven) ops)))
   )
+
+(defn planner-scale-test-all-ss []
+  (println "Scaletest-Start-State"(:cmd (plan ss-scaletest '(cas cargo-one station-five) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)) ops)))
+  (println "Scaletest-Start-State"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)(cas cargo-twelve station-four)) ops)))
+  )
+
+
+
+
+
