@@ -786,6 +786,7 @@
 
 ;;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)
 
+
 (defn remove-last [str]
   (.substring (java.lang.String. str) 0 (- (count str) 1))
   )

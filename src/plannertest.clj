@@ -156,14 +156,5 @@
      })
 
 
-;(plan ss-one '(cas cargo-one station-two ) ops)
-;(plan ss-two '(cas cargo-one station-two ) ops)
-;(plan ss-three '(cas cargo-one station-four ) ops)
-;(plan-multiple ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)
-;(plan-multiple ss-five '((cas cargo-one station-four)(cas cargo-two station-two)) ops)
-;(plan-multiple ss-six '((cas cargo-one station-two)(cas cargo-two station-five)) ops)
-;(plan ss-seven '(cas cargo-one station-one) ops)
-;(plan ss-eight '(cas cargo-one station-four) ops)
-;(plan ss-nine '(cas cargo-one station-eleven) ops)
 
 

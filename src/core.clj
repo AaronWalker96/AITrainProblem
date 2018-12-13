@@ -9,66 +9,37 @@
 ;(stateAdapter (:cmd (planner ss-one '(cas cargo-one station-two ) ops)))
 
 
-;(defn trainthing []
-;  (let[
-;       outputcmd (stateAdapter (apply str (:cmd(plan ss-one '(cas cargo-one station-two ) ops))))
-;       ]
-
-;    (loop[x 0, in outputcmd]
- ;     (
-;        (def start (nth (clojure.string/split (str in) #",") 0))
-  ;      ))
-
-
- ;   (def move (nth (clojure.string/split start #"move") (- x 1)))
- ;   (def startState (nth (clojure.string/split move #" ") 3))
-;    (def goalState (nth (clojure.string/split move #" ") 2))
- ;   (def startState (apply str startState))
- ;   (def  temp (apply str '(remove-last startState) "," goalState))
-
-;    )
-;  )
-
-(defn plan-route []
-
+(defn plan-route [planner-ss]
   (let [
-        outputcmd (stateAdapter (apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops))))
+        plannerout (plan planner-ss '(cas cargo-one station-two) ops)
+        outputcmd (stateAdapter (apply str (:cmd plannerout)))
         ]
 
-    (println (count outputcmd))
+    (println (:txt plannerout))
 
-    (loop [current outputcmd results []]
+    (loop [current outputcmd results [] po (:txt plannerout)]
 
       (if (empty? current)
-        results
-        (let []
-          ;;Rip out first
-          ;;Split
-          ;;Call a* start and make viable
-
-          )
-        (recur (rest current) (conj results "one")))
+        (println  "Planner Results are: " po " A* Results are: " results)
+        (recur (rest current) (conj results (run-astar (first current))) po))
       )
     )
   )
 
-(defn temp [outputcmd]
-  (loop [xs outputcmd
-         result []]
-    (if xs
-      (let [x (first xs)]
-        (recur (next xs) (conj result (first xs))))
-      result))
+(defn run-astar [goals]
+  (let
+    [
+     stations (clojure.string/split goals #",")
+     ]
+    (println (first stations))
+    (println (first (rest stations)))
+    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) map1)
+    )
   )
 
-
-  ;(def move (nth (clojure.string/split formatted #"move") (- x 1)))
-
-  ;state planner
-  ;goal planner
-  ;a * map
-
-
+(defn temp [one two]
+  (println (A*search {:state one, :cost 0} (fn [x] (= x two)) map1))
+  )
 
 (defn planner-test-all-ss []
   (println "Start-State-one"(:cmd (plan ss-one '(cas cargo-one station-two ) ops)))
