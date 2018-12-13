@@ -77,20 +77,20 @@
     (cond
       (= n 'station-one) (list
 
-                 {:state 'station-two, :cost (+ c 3)}
+                           {:state 'station-two, :cost (+ c 3)}
 
 
-                 )
+                           )
       (= n 'station-two) (list
-                 {:state 'station-one, :cost (+ c 3)}
+                           {:state 'station-one, :cost (+ c 3)}
 
-                 {:state 'station-three, :cost (+ c 3)}
+                           {:state 'station-three, :cost (+ c 3)}
 
-                 )
+                           )
       (= n 'station-three) (list
-                 {:state 'station-two, :cost (+ c 3)}
+                             {:state 'station-two, :cost (+ c 3)}
 
-                 )
+                             )
       )
     )
   )
@@ -106,25 +106,25 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 4.5)}
+                           {:state 'station-two, :cost (+ c 4.5)}
 
-                 {:state '3, :cost (+ c 6)}
+                           {:state 'station-three, :cost (+ c 6)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 4.5)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 4.5)}
 
-                 {:state '3, :cost (+ c 5.7)}
+                           {:state 'station-three, :cost (+ c 5.7)}
 
-                 )
-      (= n '3) (list
-                 {:state '1, :cost (+ c 6)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-one, :cost (+ c 6)}
 
-                 {:state '2, :cost (+ c 5.7)}
+                             {:state 'station-two, :cost (+ c 5.7)}
 
-                 )
+                             )
       )
     )
   )
@@ -140,50 +140,50 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 4)}
+                           {:state 'station-two, :cost (+ c 4)}
 
-                 {:state '3, :cost (+ c 2.8)}
+                           {:state 'station-three, :cost (+ c 2.8)}
 
-                 {:state '4, :cost (+ c 4)}
+                           {:state 'station-four, :cost (+ c 4)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 4)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 4)}
 
-                 {:state '3, :cost (+ c 2.8)}
+                           {:state 'station-three, :cost (+ c 2.8)}
 
-                 {:state '5, :cost (+ c 4)}
+                           {:state 'station-five, :cost (+ c 4)}
 
-                 )
-      (= n '3) (list
-                 {:state '1, :cost (+ c 2.8)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-one, :cost (+ c 2.8)}
 
-                 {:state '2, :cost (+ c 2.8)}
+                             {:state 'station-two, :cost (+ c 2.8)}
 
-                 {:state '4, :cost (+ c 2.8)}
+                             {:state 'station-four, :cost (+ c 2.8)}
 
-                 {:state '5, :cost (+ c 2.8)}
+                             {:state 'station-five, :cost (+ c 2.8)}
 
-                 )
-      (= n '4) (list
-                 {:state '1, :cost (+ c 4)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-one, :cost (+ c 4)}
 
-                 {:state '3, :cost (+ c 2.8)}
+                            {:state 'station-three, :cost (+ c 2.8)}
 
-                 {:state '5, :cost (+ c 4)}
+                            {:state 'station-five, :cost (+ c 4)}
 
-                 )
-      (= n '5) (list
+                            )
+      (= n 'station-five) (list
 
-                 {:state '2, :cost (+ c 4)}
+                            {:state 'station-two, :cost (+ c 4)}
 
-                 {:state '3, :cost (+ c 2.8)}
+                            {:state 'station-three, :cost (+ c 2.8)}
 
-                 {:state '4, :cost (+ c 4)}
+                            {:state 'station-four, :cost (+ c 4)}
 
-                 )
+                            )
       )
     )
   )
@@ -199,27 +199,27 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 3.2)}
+                           {:state 'station-two, :cost (+ c 3.2)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 3.2)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 3.2)}
 
-                 {:state '3, :cost (+ c 3.6)}
+                           {:state 'station-three, :cost (+ c 3.6)}
 
-                 {:state '4, :cost (+ c 3.6)}
+                           {:state 'station-four, :cost (+ c 3.6)}
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 3.6)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 3.6)}
 
-                 )
-      (= n '4) (list
-                 {:state '2, :cost (+ c 3.6)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-two, :cost (+ c 3.6)}
 
-                 )
+                            )
       )
     )
   )
@@ -235,35 +235,35 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 2.8)}
+                           {:state 'station-two, :cost (+ c 2.8)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 2.8)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 2.8)}
 
-                 {:state '3, :cost (+ c 3)}
+                           {:state 'station-three, :cost (+ c 3)}
 
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 3)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 3)}
 
-                 {:state '4, :cost (+ c 3)}
+                             {:state 'station-four, :cost (+ c 3)}
 
-                 )
-      (= n '4) (list
-                 {:state '3, :cost (+ c 3)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-three, :cost (+ c 3)}
 
-                 {:state '5, :cost (+ c 2.8)}
+                            {:state 'station-five, :cost (+ c 2.8)}
 
-                 )
-      (= n '5) (list
+                            )
+      (= n 'station-five) (list
 
-                 {:state '4, :cost (+ c 2.8)}
+                            {:state 'station-four, :cost (+ c 2.8)}
 
-                 )
+                            )
       )
     )
   )
@@ -279,31 +279,31 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 2)}
+                           {:state 'station-two, :cost (+ c 2)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 2)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 2)}
 
-                 {:state '3, :cost (+ c 2)}
+                           {:state 'station-three, :cost (+ c 2)}
 
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 2)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 2)}
 
-                 )
-      (= n '4) (list
-                 {:state '5, :cost (+ c 2)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-five, :cost (+ c 2)}
 
-                 )
-      (= n '5) (list
+                            )
+      (= n 'station-five) (list
 
-                 {:state '4, :cost (+ c 2)}
+                            {:state 'station-four, :cost (+ c 2)}
 
-                 )
+                            )
       )
     )
   )
@@ -319,30 +319,30 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '1, :cost (+ c 4)}
+                           {:state 'station-one, :cost (+ c 4)}
 
-                 {:state '2, :cost (+ c 4)}
+                           {:state 'station-two, :cost (+ c 4)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 4)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 4)}
 
-                 {:state '3, :cost (+ c 3)}
+                           {:state 'station-three, :cost (+ c 3)}
 
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 3)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 3)}
 
-                 {:state '4, :cost (+ c 3)}
+                             {:state 'station-four, :cost (+ c 3)}
 
-                 )
-      (= n '4) (list
-                 {:state '3, :cost (+ c 3)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-three, :cost (+ c 3)}
 
-                 )
+                            )
       )
     )
   )
@@ -358,38 +358,38 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 2.2)}
+                           {:state 'station-two, :cost (+ c 2.2)}
 
-                 {:state '5, :cost (+ c 2.2)}
+                           {:state 'station-five, :cost (+ c 2.2)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 2.2)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 2.2)}
 
-                 {:state '3, :cost (+ c 3.2)}
+                           {:state 'station-three, :cost (+ c 3.2)}
 
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 3.2)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 3.2)}
 
-                 {:state '4, :cost (+ c 2.8)}
+                             {:state 'station-four, :cost (+ c 2.8)}
 
-                 )
-      (= n '4) (list
-                 {:state '3, :cost (+ c 2.8)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-three, :cost (+ c 2.8)}
 
-                 {:state '5, :cost (+ c 2)}
+                            {:state 'station-five, :cost (+ c 2)}
 
-                 )
-      (= n '5) (list
-                 {:state '1, :cost (+ c 2.2)}
+                            )
+      (= n 'station-five) (list
+                            {:state 'station-one, :cost (+ c 2.2)}
 
-                 {:state '4, :cost (+ c 2)}
+                            {:state 'station-four, :cost (+ c 2)}
 
-                 )
+                            )
       )
     )
   )
@@ -405,76 +405,77 @@
         ]
 
     (cond
-      (= n '1) (list
+      (= n 'station-one) (list
 
-                 {:state '2, :cost (+ c 4.8)}
+                           {:state 'station-two, :cost (+ c 4.8)}
 
-                 )
-      (= n '2) (list
-                 {:state '1, :cost (+ c 4.8)}
+                           )
+      (= n 'station-two) (list
+                           {:state 'station-one, :cost (+ c 4.8)}
 
-                 {:state '3, :cost (+ c 2)}
+                           {:state 'station-three, :cost (+ c 2)}
 
 
-                 )
-      (= n '3) (list
-                 {:state '2, :cost (+ c 2)}
+                           )
+      (= n 'station-three) (list
+                             {:state 'station-two, :cost (+ c 2)}
 
-                 {:state '4, :cost (+ c 2)}
+                             {:state 'station-four, :cost (+ c 2)}
 
-                 )
-      (= n '4) (list
-                 {:state '3, :cost (+ c 2)}
+                             )
+      (= n 'station-four) (list
+                            {:state 'station-three, :cost (+ c 2)}
 
-                 {:state '5, :cost (+ c 2.2)}
+                            {:state 'station-five, :cost (+ c 2.2)}
 
-                 {:state '6, :cost (+ c 2.8)}
+                            {:state 'station-six, :cost (+ c 2.8)}
 
-                 )
-      (= n '5) (list
-                 {:state '4, :cost (+ c 2.2)}
+                            )
+      (= n 'station-five) (list
+                            {:state 'station-four, :cost (+ c 2.2)}
 
-                 )
-      (= n '6) (list
-                 {:state '4, :cost (+ c 2.8)}
+                            )
+      (= n 'station-six) (list
+                           {:state 'station-four, :cost (+ c 2.8)}
 
-                 {:state '7, :cost (+ c 3.2)}
+                           {:state 'station-seven, :cost (+ c 3.2)}
 
-                 )
-      (= n '7) (list
-                 {:state '6, :cost (+ c 3.2)}
+                           )
+      (= n 'station-seven) (list
+                             {:state 'station-six, :cost (+ c 3.2)}
 
-                 {:state '8, :cost (+ c 5.1)}
+                             {:state 'station-eight, :cost (+ c 5.1)}
 
-                 )
-      (= n '8) (list
-                 {:state '7, :cost (+ c 5.1)}
+                             )
+      (= n 'station-eight) (list
+                             {:state 'station-seven, :cost (+ c 5.1)}
 
-                 {:state '9, :cost (+ c 3.2)}
+                             {:state 'station-nine, :cost (+ c 3.2)}
 
-                 {:state '10, :cost (+ c 2.8)}
+                             {:state 'station-ten, :cost (+ c 2.8)}
 
-                 )
-      (= n '9) (list
-                 {:state '8, :cost (+ c 3.2)}
+                             )
+      (= n 'station-nine) (list
+                            {:state 'station-eight, :cost (+ c 3.2)}
 
-                 )
-      (= n '10) (list
-                 {:state '8, :cost (+ c 2.8)}
+                            )
+      (= n 'station-ten) (list
+                           {:state 'station-eight, :cost (+ c 2.8)}
 
-                 {:state '11, :cost (+ c 2.8)}
+                           {:state 'station-evelen, :cost (+ c 2.8)}
 
-                 {:state '12, :cost (+ c 3)}
+                           {:state 'station-twelve, :cost (+ c 3)}
 
-                 )
-      (= n '11) (list
-                 {:state '10, :cost (+ c 2.8)}
+                           )
+      (= n 'station-evelen) (list
+                              {:state 'station-ten, :cost (+ c 2.8)}
 
-                 )
-      (= n '12) (list
-                 {:state '10, :cost (+ c 3)}
+                              )
+      (= n 'station-twelve) (list
+                              {:state 'station-ten
+                                      , :cost (+ c 3)}
 
-                 )
+                              )
       )
     )
   )
@@ -811,9 +812,3 @@
       )
     )
   )
-
-
-;"((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one))"
-
-;((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one)(move train-one station-four station-two)(pickup cargo-two)(move train-one station-two station-four)(drop cargo-two))
-
