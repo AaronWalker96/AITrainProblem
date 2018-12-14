@@ -5,6 +5,7 @@
 (require 'search.planner)
 (require 'ourastarsearch)
 (require 'plannertest)
+(require 'opsearchtesting)
 
 ;(plan-route ss-one '(cas cargo-one station-two) map1)
 
