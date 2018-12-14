@@ -135,7 +135,7 @@
      (cat c2 s4)})
 
 ; user=> (ops-search state5 '((cat c1 s4)(cat c2 s2)) ops :world world5)
-; Does not use 2nd train.
+; Only moves one of the 2 trains
 
 
 ; 6
@@ -155,7 +155,7 @@
      (cat c2 s4)})
 
 ; user=> (ops-search state6 '((cat c1 s2) (cat c2 s5)) ops :world world6)
-; nil
+; nil - Does not attempt to move c1, will only return nil
 
 
 ; 7a
@@ -175,6 +175,7 @@
      (cat c1 s1)})
 
 ; user=> (ops-search state7a '((cat c1 s1)) ops :world world7a)
+; Goal state already achieved, no moves required
 
 
 ; 7b
@@ -192,6 +193,7 @@
      (cat c1 s1)})
 
 ; user=> (ops-search state7b '((cat c1 s1)) ops :world world7b)
+; Goal state already achieved, no moves required
 
 
 ; 8
