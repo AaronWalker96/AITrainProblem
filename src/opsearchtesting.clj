@@ -53,7 +53,6 @@
 
 ; user=> (ops-search state1 '((cas c1 s2)) ops :world world-one)
 
-
 ; 2
 (def world-two
   '#{(train t1)
@@ -71,7 +70,6 @@
      (cas c1 s1)})
 
 ; user=> (ops-search state2 '((cas c1 s2)) ops :world world-two)
-
 
 ; 3
 (def world-three
@@ -94,7 +92,6 @@
 
 ; user=> (ops-search state3 '((cas c1 s4)) ops :world world-three)
 
-
 ; 4
 (def world-four
   '#{(train t1)
@@ -112,7 +109,6 @@
      (cas c2 s4)})
 
 ; user=> (ops-search state4 '((cas c1 s2)(cas c2 s2)) ops :world world-four)
-
 
 ; 5
 (def world-five
@@ -137,7 +133,6 @@
 ; user=> (ops-search state5 '((cas c1 s4)(cas c2 s2)) ops :world world-five)
 ; Only moves one of the 2 trains
 
-
 ; 6
 (def world-six
   '#{(train t1)
@@ -156,7 +151,6 @@
 
 ; user=> (ops-search state6 '((cas c1 s2) (cas c2 s5)) ops :world world-six)
 ; nil - Does not attempt to move c1, will only return nil
-
 
 ; 7a
 ; Start state = Goal state
@@ -177,7 +171,6 @@
 ; user=> (ops-search state7a '((cas c1 s1)) ops :world world-seven-a)
 ; Goal state already achieved, no moves required
 
-
 ; 7b
 ; Start state = Goal state
 (def world-seven-b
@@ -195,7 +188,6 @@
 ; user=> (ops-search state7b '((cas c1 s1)) ops :world world-seven-b)
 ; Goal state already achieved, no moves required
 
-
 ; 8
 (def world-eight
   '#{(cargo c1)
@@ -211,7 +203,6 @@
 
 ; user=> (ops-search state8 '((cas c1 s4)) ops :world world-eight)
 ; nil - No train to move the cargo
-
 
 ; 9
 (def world-nine
@@ -238,7 +229,6 @@
 
 ; user=> (ops-search state9 '((cas c1 s11)) ops :world world-nine)
 
-
 ;====================;
 ;= Additional Tests =;
 ;====================;
@@ -256,7 +246,6 @@
 
 ; user=> (ops-search state_1at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_1at)
 
-
 ; AT 2
 (def world_2at
   '#{(train t1)
@@ -272,7 +261,6 @@
      (cas c1 s3)})
 
 ; user=> (ops-search state_2at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_2at)
-
 
 ; AT 3
 (def world_3at
@@ -298,7 +286,6 @@
 ; user=> (ops-search state_3at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_3at)
 ; takes conciderable time
 ; however, works uses 2 trains
-
 
 ; AT 4
 (def world_4at
@@ -328,9 +315,6 @@
 
 ; user=> (ops-search state_4at '((cas c1 s1) (cas c2 s1) (cas c3 s2b) (cas c4 s2b)) ops :world world_4at)
 ; StackOverflowError
-
-
-
 
 ;=============;
 ;= Scaletest =;

@@ -5,7 +5,6 @@
 (require 'search.planner)
 (require 'ourastarsearch)
 (require 'plannertest)
-(require 'opsearchtesting)
 
 ;(plan-route ss-one '(cas cargo-one station-two) map1)
 
@@ -118,3 +117,8 @@
   (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)) ops :world world-scaletest))
   (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest))
   )
+
+(defn A*-dijkstra []
+    (time (A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*))
+    (time (A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) dijkstra))
+ )

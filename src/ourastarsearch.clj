@@ -10,7 +10,8 @@
 ;; @args get-cost  removes other information from a state returning only the cost
 ;; @args debug prints some information
 
-;;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)
+;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)
+
 
 (defn A*search
   [start goal LMG & {:keys [get-state get-cost selector debug]
@@ -762,7 +763,7 @@
     )
   )
 
-(defn Dijkstra [state]
+(defn a* [state]
 
   (let [n (:state state)
 
@@ -773,64 +774,148 @@
     (cond
       (= n 'a) (list
 
-                 {:state 'b, :cost (+ c 3)}
+                 {:state 'b, :cost (+ c 12.2)}
 
-                 {:state 'c, :cost (+ c 2)}
+                 {:state 'c, :cost (+ c 10.3)}
+
+                 {:state 'e, :cost (+ c 11.2)}
+
+                 )
+      (= n 'b) (list
+                 {:state 'a, :cost (+ c 14)}
+
+                 {:state 'c, :cost (+ c 8.9)}
+
+                 {:state 'd, :cost (+ c 8.8)}
+
+                 )
+      (= n 'c) (list
+
+                 {:state 'a, :cost (+ c 13.6)}
+
+                 {:state 'b, :cost (+ c 10.4)}
+
+                 {:state 'd, :cost (+ c 9)}
+
+                 {:state 'f, :cost (+ c 6.7)}
+
+                 )
+      (= n 'd) (list
+
+                 {:state 'b, :cost (+ c 11)}
+
+                 {:state 'h, :cost (+ c 6)}
+
+                 {:state 'c, :cost (+ c 9.7)}
+
+                 )
+      (= n 'e) (list
+
+                 {:state 'a, :cost (+ c 14)}
+
+                 {:state 'f, :cost (+ c 8.5)}
+
+                 {:state 'g, :cost (+ c 9.1)}
+
+                 )
+      (= n 'f) (list
+
+                 {:state 'c, :cost (+ c 8.9)}
+
+                 {:state 'e, :cost (+ c 11.2)}
+
+                 {:state 'g, :cost (+ c 10)}
+
+                 )
+      (= n 'g) (list
+
+                 {:state 'e, :cost (+ c 11.3)}
+
+                 {:state 'f, :cost (+ c 9.5)}
+
+                 {:state 'h, :cost (+ c 5)}
+
+                 )
+      (= n 'h) (list
+
+                 {:state 'g, :cost (+ c 12)}
+
+                 {:state 'd, :cost (+ c 10)}
+
+                 )
+      )
+    )
+  )
+
+(defn dijkstra [state]
+
+  (let [n (:state state)
+
+        c (:cost state)
+
+        ]
+
+    (cond
+      (= n 'a) (list
+
+                 {:state 'b, :cost (+ c 4)}
+
+                 {:state 'c, :cost (+ c 3.6)}
 
                  {:state 'e, :cost (+ c 4)}
 
                  )
       (= n 'b) (list
-                 {:state 'a, :cost (+ c 3)}
+                 {:state 'a, :cost (+ c 4)}
 
-                 {:state 'c, :cost (+ c 2)}
+                 {:state 'c, :cost (+ c 2.2)}
 
-                 {:state 'd, :cost (+ c 2)}
+                 {:state 'd, :cost (+ c 2.8)}
 
                  )
       (= n 'c) (list
 
-                 {:state 'a, :cost (+ c 2)}
+                 {:state 'a, :cost (+ c 3.6)}
 
-                 {:state 'b, :cost (+ c 2)}
+                 {:state 'b, :cost (+ c 2.2)}
 
-                 {:state 'd, :cost (+ c 2)}
+                 {:state 'd, :cost (+ c 3)}
 
-                 {:state 'f, :cost (+ c 3)}
+                 {:state 'f, :cost (+ c 2.2)}
 
                  )
       (= n 'd) (list
 
-                 {:state 'b, :cost (+ c 2)}
+                 {:state 'b, :cost (+ c 2.8)}
 
                  {:state 'h, :cost (+ c 6)}
 
-                 {:state 'c, :cost (+ c 2)}
+                 {:state 'c, :cost (+ c 3)}
 
                  )
       (= n 'e) (list
 
                  {:state 'a, :cost (+ c 4)}
 
-                 {:state 'f, :cost (+ c 2)}
+                 {:state 'f, :cost (+ c 4)}
 
-                 {:state 'g, :cost (+ c 2)}
+                 {:state 'g, :cost (+ c 4.1)}
 
                  )
       (= n 'f) (list
 
-                 {:state 'c, :cost (+ c 3)}
+                 {:state 'c, :cost (+ c 2.2)}
 
-                 {:state 'e, :cost (+ c 2)}
+                 {:state 'e, :cost (+ c 4)}
 
-                 {:state 'g, :cost (+ c 3)}
+                 {:state 'g, :cost (+ c 5)}
 
                  )
       (= n 'g) (list
 
-                 {:state 'e, :cost (+ c 2)}
+                 {:state 'e, :cost (+ c 4.1)}
 
-                 {:state 'f, :cost (+ c 3)}
+                 {:state 'f, :cost (+ c 5)}
 
                  {:state 'h, :cost (+ c 5)}
 

@@ -14,8 +14,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="207" column="29" lean-forward="true" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
+            <state relative-caret-position="211">
+              <caret line="137" column="7" lean-forward="true" selection-end-line="227" />
               <folding>
                 <element signature="e#2876#3071#0" />
                 <element signature="e#3073#3528#0" />
@@ -28,16 +28,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="143">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
               <folding>
-                <element signature="e#377#666#0" />
                 <element signature="e#320#795#0" />
                 <element signature="e#792#1285#0" />
-                <element signature="e#1636#2572#0" />
                 <element signature="e#2574#2863#0" />
                 <element signature="e#4101#7350#0" />
-                <element signature="e#6134#6406#0" />
                 <element signature="e#6408#6511#0" />
                 <element signature="e#6948#8689#0" />
               </folding>
@@ -48,25 +45,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ourastarsearch.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="965" selection-start-line="965" selection-end-line="965" />
+            <state relative-caret-position="170">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="e#684#2792#0" />
-                <element signature="e#2853#3338#0" />
-                <element signature="e#3471#4171#0" />
-                <element signature="e#4230#5733#0" />
-                <element signature="e#5792#6556#0" />
-                <element signature="e#6615#7577#0" />
-                <element signature="e#7636#8454#0" />
-                <element signature="e#8513#9335#0" />
-                <element signature="e#9394#10495#0" />
-                <element signature="e#10554#12966#0" />
-                <element signature="e#13026#21282#0" />
-                <element signature="e#10225#10445#0" />
-                <element signature="e#10447#11980#0" />
-                <element signature="e#11982#13502#0" />
-                <element signature="e#13504#14179#0" />
-                <element signature="e#14181#15398#0" />
+                <element signature="e#2913#3472#0" />
+                <element signature="e#3531#4231#0" />
+                <element signature="e#4290#5793#0" />
+                <element signature="e#5852#6616#0" />
+                <element signature="e#6675#7637#0" />
+                <element signature="e#7696#8514#0" />
+                <element signature="e#8573#9395#0" />
+                <element signature="e#9454#10555#0" />
+                <element signature="e#10614#13026#0" />
+                <element signature="e#13086#21342#0" />
+                <element signature="e#21405#21625#0" />
+                <element signature="e#21627#23160#0" />
+                <element signature="e#23162#24719#0" />
+                <element signature="e#24721#26261#0" />
+                <element signature="e#24684#25359#0" />
+                <element signature="e#25361#26578#0" />
                 <element signature="e#15464#15550#0" />
                 <element signature="e#15552#16267#0" />
               </folding>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/opsearchtesting.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="789">
-              <caret line="382" selection-start-line="382" selection-end-line="382" />
+            <state relative-caret-position="221">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -99,17 +97,18 @@
         <option value="$PROJECT_DIR$/src/search/planner.clj" />
         <option value="$PROJECT_DIR$/src/lift_example.clj" />
         <option value="$PROJECT_DIR$/src/opsearchtest.clj" />
-        <option value="$PROJECT_DIR$/src/ourastarsearch.clj" />
         <option value="$PROJECT_DIR$/src/plannertest.clj" />
-        <option value="$PROJECT_DIR$/src/opsearchtesting.clj" />
+        <option value="$PROJECT_DIR$/src/ourastarsearch.clj" />
         <option value="$PROJECT_DIR$/src/core.clj" />
+        <option value="$PROJECT_DIR$/src/opsearchtesting.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="1932" />
+    <option name="y" value="60" />
+    <option name="width" value="975" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -128,6 +127,12 @@
               <item name="AITrainProblem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AITrainProblem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AITrainProblem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -141,7 +146,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="ReplState" timestamp="1544787921012">{:repl-history {:ide [], :local [{:command &quot;(stateAdapter \&quot;((move train-one station-three station-one)(pickup cargo-one)(move train-one station-two station-three)(drop cargo-one))\&quot;)&quot;, :offset 137, :ns &quot;user&quot;} {:command &quot; (stateAdapter (apply str (:cmd(planner ss-one '(cas cargo-one station-two ) ops))))&quot;, :offset 84, :ns &quot;user&quot;} {:command &quot;(println (stateAdapter (apply str (:cmd(planner ss-one '(cas cargo-one station-two ) ops)))))&quot;, :offset 93, :ns &quot;user&quot;} {:command &quot;(trainthing)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(planner ss-two '(cas cargo-one station-two ) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(planner ss-six '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 79, :ns &quot;user&quot;} {:command &quot;(planner ss-nine '(cas cargo-one station-eleven) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(planner )&quot;, :offset 10} {:command &quot;(planner ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 79, :ns &quot;user&quot;} {:command &quot;(planner ss-four '((cas cargo-one station-two)) ops)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(planner ss-four '(cas cargo-one station-two) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-four '(cas cargo-one station-two) ops)&quot;, :offset 47, :ns &quot;user&quot;} {:command &quot;(planner ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 47, :ns &quot;user&quot;} {:command &quot;(plan-multiple '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 77, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-five '((cas cargo-one station-four)(cas cargo-two station-two)) ops)&quot;, :offset 86, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-six '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(planner-test)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(true-plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops)))&quot;, :offset 66, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops)))&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-two '(cas cargo-one station-two ) ops))))#&quot;, :offset 82, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-two '(cas cargo-one station-two ) ops))))&quot;, :offset 81, :ns &quot;user&quot;} {:command &quot;(empty? ())&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(empty? (\&quot;asda\&quot;))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(empty? (\&quot;asda\&quot; \&quot;asdas\&quot; \&quot;dasdas\&quot;))&quot;, :offset 34, :ns &quot;user&quot;} {:command &quot;(empty? '(\&quot;asda\&quot; \&quot;asdas\&quot; \&quot;dasdas\&quot;))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(empty? '())&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(temp '(\&quot;asdasd\&quot; \&quot;asdasd\&quot;))&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(plam-route)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(plan ss-nine '(cas cargo-one station-eleven) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-nine-temp '(cas cargo-one station-eleven) ops)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(time (plan ss-nine '(cas cargo-one station-eleven) ops))&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(time (plan ss-nine-temp '(cas cargo-one station-eleven) ops))\n&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(defn run-astar [goals]\n      goals\n  )&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops))&quot;, :offset 54, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops))))&quot;, :offset 81, :ns &quot;user&quot;} {:command &quot;(empty? (rest [\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;]))&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(empty? (rest (rest[\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;])))&quot;, :offset 79, :ns &quot;user&quot;} {:command &quot;(rest [\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;])&quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x station-three)) map1)&quot;, :offset 75, :ns &quot;user&quot;} {:command &quot;(A*search {:state \&quot;station-one\&quot;, :cost 0} (fn [x] (= x \&quot;station-three\&quot;)) map1)&quot;, :offset 78, :ns &quot;user&quot;} {:command &quot;(A*search {:state station-one, :cost 0} (fn [x] (= x station-three)) map1)&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(run-astar [station-one station-three])&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(run-astar '[station-one station-three])&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar #[station-one station-three])&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar (station-one station-three))&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(run-astar '(station-one station-three))&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar (\&quot;station-one\&quot; \&quot;station-three\&quot;))&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-threi)) map1)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-three)) map1)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(println (A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-three)) map1))&quot;, :offset 86, :ns &quot;user&quot;} {:command &quot;(temp \&quot;station-one\&quot; \&quot;station-three\&quot;)&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(temp station-one station-three)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(plan-route)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one map1)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(planner-test-all-ss)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(println \&quot;Scaletest-Start-State\&quot;(:cmd (plan ss-scaletest '(cas cargo-one station-five) ops)))&quot;, :offset 93, :ns &quot;user&quot;} {:command &quot;(time)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(time(plan ss-scaletest '(cas cargo-one station-five) ops))&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)) ops))&quot;, :offset 97, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)) ops))&quot;, :offset 128, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)) ops)&quot;, :offset 152, :ns &quot;user&quot;} {:command &quot;1&quot;, :offset 1} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)) ops))&quot;, :offset 158, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)) ops))&quot;, :offset 187, :ns &quot;user&quot;} {:command &quot;()&quot;, :offset 2} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)) ops)))&quot;, :offset 197, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)) ops)))&quot;, :offset 224, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)) ops)&quot;, :offset 240} {:command &quot;(+ 2 1)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)) ops)))&quot;, :offset 256, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)) ops)))&quot;, :offset 288, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)) ops)&quot;, :offset 300, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)) ops)&quot;, :offset 327, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)) ops)&quot;, :offset 359, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)(cas cargo-twelve station-four)) ops)&quot;, :offset 390, :ns &quot;user&quot;} {:command &quot;(planner-test-large-ss)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-twelve '((cas llama station-newcastle)(cas scottish-notes station-edinburgh)(cas neds station-brighton)(cas sheep station-edinburgh)(cas brenda station-bristol)(cas cheese station-york) ) ops)\n&quot;, :offset 211, :ns &quot;user&quot;} {:command &quot;(ops-search state1 '((cat c1 s2)) ops :world world-one)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cat c1 s11)(cat c2 s12)) ops :world world-nine)&quot;, :offset 69, :ns &quot;user&quot;} {:command &quot;(plan ss-scaletest '(cas cargo-one station-five) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cat c1 s11)) ops :world world-nine)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cas c1 s11)) ops :world world-nine)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)) ops :world ss-scaletest)&quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '(cas c1 s5) ops :world ss-scaletest)&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest)&quot;, :offset 194, :ns &quot;user&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest)&quot;, :offset 67, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest))&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)) ops :world world-scaletest))&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)) ops :world world-scaletest))&quot;, :offset 96, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one '(cas cargo-one station-two) map1)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(defn run-astar [a-map goals]\n  (let\n    [\n     stations (clojure.string/split goals #\&quot;,\&quot;)\n     ]\n    (println (first stations))\n    (println (first (rest stations)))\n    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) a-map)\n    )\n  )&quot;, :offset 289, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1544795596975">{:repl-history {:ide [], :local [{:command &quot;(planner ss-four '(cas cargo-one station-two) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-four '(cas cargo-one station-two) ops)&quot;, :offset 47, :ns &quot;user&quot;} {:command &quot;(planner ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(plan-multiple '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 77, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-five '((cas cargo-one station-four)(cas cargo-two station-two)) ops)&quot;, :offset 86, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-six '((cas cargo-one station-two)(cas cargo-two station-five)) ops)&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(planner-test)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(true-plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops&quot;, :offset 52, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops)))&quot;, :offset 66, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops)))&quot;, :offset 80, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-two '(cas cargo-one station-two ) ops))))#&quot;, :offset 82, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-two '(cas cargo-one station-two ) ops))))&quot;, :offset 81, :ns &quot;user&quot;} {:command &quot;(empty? ())&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(empty? (\&quot;asda\&quot;))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(empty? (\&quot;asda\&quot; \&quot;asdas\&quot; \&quot;dasdas\&quot;))&quot;, :offset 34, :ns &quot;user&quot;} {:command &quot;(empty? '(\&quot;asda\&quot; \&quot;asdas\&quot; \&quot;dasdas\&quot;))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(empty? '())&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(temp '(\&quot;asdasd\&quot; \&quot;asdasd\&quot;))&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(plam-route)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(plan ss-nine '(cas cargo-one station-eleven) ops)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(plan ss-nine-temp '(cas cargo-one station-eleven) ops)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(time (plan ss-nine '(cas cargo-one station-eleven) ops))&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(time (plan ss-nine-temp '(cas cargo-one station-eleven) ops))\n&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(defn run-astar [goals]\n      goals\n  )&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(:cmd (plan ss-one '(cas cargo-one station-two ) ops))&quot;, :offset 54, :ns &quot;user&quot;} {:command &quot;(stateAdapter (apply str (:cmd (plan ss-one '(cas cargo-one station-two ) ops))))&quot;, :offset 81, :ns &quot;user&quot;} {:command &quot;(empty? (rest [\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;]))&quot;, :offset 73, :ns &quot;user&quot;} {:command &quot;(empty? (rest (rest[\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;])))&quot;, :offset 79, :ns &quot;user&quot;} {:command &quot;(rest [\&quot;station-one,station-three\&quot; \&quot;station-three,station-two\&quot;])&quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'a, :cost 0} (fn [x] (= x 'h)) a*lmg-map)&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x station-three)) map1)&quot;, :offset 75, :ns &quot;user&quot;} {:command &quot;(A*search {:state \&quot;station-one\&quot;, :cost 0} (fn [x] (= x \&quot;station-three\&quot;)) map1)&quot;, :offset 78, :ns &quot;user&quot;} {:command &quot;(A*search {:state station-one, :cost 0} (fn [x] (= x station-three)) map1)&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(run-astar [station-one station-three])&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(run-astar '[station-one station-three])&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar #[station-one station-three])&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar (station-one station-three))&quot;, :offset 39, :ns &quot;user&quot;} {:command &quot;(run-astar '(station-one station-three))&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(run-astar (\&quot;station-one\&quot; \&quot;station-three\&quot;))&quot;, :offset 43, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-threi)) map1)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-three)) map1)&quot;, :offset 76, :ns &quot;user&quot;} {:command &quot;(println (A*search {:state 'station-one, :cost 0} (fn [x] (= x 'station-three)) map1))&quot;, :offset 86, :ns &quot;user&quot;} {:command &quot;(temp \&quot;station-one\&quot; \&quot;station-three\&quot;)&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(temp station-one station-three)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(plan-route)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one map1)&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(planner-test-all-ss)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(println \&quot;Scaletest-Start-State\&quot;(:cmd (plan ss-scaletest '(cas cargo-one station-five) ops)))&quot;, :offset 93, :ns &quot;user&quot;} {:command &quot;(time)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(time(plan ss-scaletest '(cas cargo-one station-five) ops))&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)) ops))&quot;, :offset 97, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)) ops))&quot;, :offset 128, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)) ops)&quot;, :offset 152, :ns &quot;user&quot;} {:command &quot;1&quot;, :offset 1} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)) ops))&quot;, :offset 158, :ns &quot;user&quot;} {:command &quot;(time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)) ops))&quot;, :offset 187, :ns &quot;user&quot;} {:command &quot;()&quot;, :offset 2} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)) ops)))&quot;, :offset 197, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)) ops)))&quot;, :offset 224, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)) ops)&quot;, :offset 240} {:command &quot;(+ 2 1)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)) ops)))&quot;, :offset 256, :ns &quot;user&quot;} {:command &quot;(println (time(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)) ops)))&quot;, :offset 288, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)) ops)&quot;, :offset 300, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)) ops)&quot;, :offset 327, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)) ops)&quot;, :offset 359, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)(cas cargo-twelve station-four)) ops)&quot;, :offset 390, :ns &quot;user&quot;} {:command &quot;(planner-test-large-ss)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(plan-multiple ss-twelve '((cas llama station-newcastle)(cas scottish-notes station-edinburgh)(cas neds station-brighton)(cas sheep station-edinburgh)(cas brenda station-bristol)(cas cheese station-york) ) ops)\n&quot;, :offset 211, :ns &quot;user&quot;} {:command &quot;(ops-search state1 '((cat c1 s2)) ops :world world-one)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cat c1 s11)(cat c2 s12)) ops :world world-nine)&quot;, :offset 69, :ns &quot;user&quot;} {:command &quot;(plan ss-scaletest '(cas cargo-one station-five) ops)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cat c1 s11)) ops :world world-nine)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(ops-search state9 '((cas c1 s11)) ops :world world-nine)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)) ops :world ss-scaletest)&quot;, :offset 64, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '(cas c1 s5) ops :world ss-scaletest)&quot;, :offset 62, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest)&quot;, :offset 194, :ns &quot;user&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest)&quot;, :offset 67, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest))&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)) ops :world world-scaletest))&quot;, :offset 85, :ns &quot;user&quot;} {:command &quot;(time (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)) ops :world world-scaletest))&quot;, :offset 96, :ns &quot;user&quot;} {:command &quot;(defn run-astar [a-map goals]\n  (let\n    [\n     stations (clojure.string/split goals #\&quot;,\&quot;)\n     ]\n    (println (first stations))\n    (println (first (rest stations)))\n    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) a-map)\n    )\n  )&quot;, :offset 289, :ns &quot;user&quot;} {:command &quot;planner-a*-examples&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(planner-a*-examples)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(println \&quot;Start-State-four\&quot; (:cmd (plan ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)))&quot;, :offset 112, :ns &quot;user&quot;} {:command &quot;(println \&quot;Start-State-four\&quot; (:cmd (plan-multiple ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)))&quot;, :offset 121, :ns &quot;user&quot;} {:command &quot;(plan-route ss-three '(cas cargo-one station-four) map3)&quot;, :offset 56, :ns &quot;user&quot;} {:command &quot;(plan-route ss-nine '(cas cargo-one station-eleven) map9)&quot;, :offset 57, :ns &quot;user&quot;} {:command &quot;(plan-route-multiple-goals ss-six '((cas cargo-one station-two)(cas cargo-two station-five))  map6)&quot;, :offset 99, :ns &quot;user&quot;} {:command &quot;(ops-scale-test-all)&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(+ 1 2)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(plan-route ss-two '(cas cargo-one station-two) map2)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(plan-route ss-one '(cas cargo-one station-two) map1)&quot;, :offset 53, :ns &quot;user&quot;} {:command &quot;(plan ss-one '(cas cargo-one station-two ) ops)&quot;, :offset 47, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -186,10 +191,10 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.118336886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -209,7 +214,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" x="1932" y="9" width="1905" height="1148" id="REPL" order="4" sideWeight="0.86904764" side_tool="true" type="FLOATING" visible="true" weight="0.45514223" />
+      <window_info anchor="right" x="1888" y="191" width="1905" height="1148" id="REPL" order="4" sideWeight="0.86904764" side_tool="true" type="FLOATING" weight="0.45514223" />
       <window_info anchor="right" id="Leiningen" order="5" sideWeight="0.13095239" weight="0.45514223" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
@@ -241,18 +246,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/core.clj</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -290,44 +283,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/opsearchtesting.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ourastarsearch.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        <state relative-caret-position="170">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="e#684#2792#0" />
-            <element signature="e#2853#3338#0" />
-            <element signature="e#3471#4171#0" />
-            <element signature="e#4230#5733#0" />
-            <element signature="e#5792#6556#0" />
-            <element signature="e#6615#7577#0" />
-            <element signature="e#7636#8454#0" />
-            <element signature="e#8513#9335#0" />
-            <element signature="e#9394#10495#0" />
-            <element signature="e#10554#12966#0" />
-            <element signature="e#13026#21282#0" />
-            <element signature="e#10225#10445#0" />
-            <element signature="e#10447#11980#0" />
-            <element signature="e#11982#13502#0" />
-            <element signature="e#13504#14179#0" />
-            <element signature="e#14181#15398#0" />
+            <element signature="e#2913#3472#0" />
+            <element signature="e#3531#4231#0" />
+            <element signature="e#4290#5793#0" />
+            <element signature="e#5852#6616#0" />
+            <element signature="e#6675#7637#0" />
+            <element signature="e#7696#8514#0" />
+            <element signature="e#8573#9395#0" />
+            <element signature="e#9454#10555#0" />
+            <element signature="e#10614#13026#0" />
+            <element signature="e#13086#21342#0" />
+            <element signature="e#21405#21625#0" />
+            <element signature="e#21627#23160#0" />
+            <element signature="e#23162#24719#0" />
+            <element signature="e#24721#26261#0" />
+            <element signature="e#24684#25359#0" />
+            <element signature="e#25361#26578#0" />
             <element signature="e#15464#15550#0" />
             <element signature="e#15552#16267#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/opsearchtesting.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="382" selection-start-line="382" selection-end-line="382" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/plannertest.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="207" column="29" lean-forward="true" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
+        <state relative-caret-position="211">
+          <caret line="137" column="7" lean-forward="true" selection-end-line="227" />
           <folding>
             <element signature="e#2876#3071#0" />
             <element signature="e#3073#3528#0" />
@@ -338,16 +332,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="143">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding>
-            <element signature="e#377#666#0" />
             <element signature="e#320#795#0" />
             <element signature="e#792#1285#0" />
-            <element signature="e#1636#2572#0" />
             <element signature="e#2574#2863#0" />
             <element signature="e#4101#7350#0" />
-            <element signature="e#6134#6406#0" />
             <element signature="e#6408#6511#0" />
             <element signature="e#6948#8689#0" />
           </folding>
