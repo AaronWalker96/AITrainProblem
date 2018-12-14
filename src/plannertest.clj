@@ -208,6 +208,7 @@
      (station station-twelve)
      (isa train-one train)
      (tas train-one station-one)
+     (cas cargo-one station-one)
      (cas cargo-two station-two)
      (cas cargo-three station-three)
      (cas cargo-four station-four)
@@ -219,6 +220,7 @@
      (cas cargo-ten station-ten)
      (cas cargo-eleven station-eleven)
      (cas cargo-twelve station-twelve)
+
      })
 
 

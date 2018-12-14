@@ -63,8 +63,6 @@
                   (concat queued new-states)
                   new-visited)))))))))
 
-
-
 ;;====================== Map 1 ========================
 
 (defn map1 [state]

@@ -11,6 +11,17 @@
 ;;Plan-route is used with single goals
 ;;Plan-route is used with multiple goals
 
+(defn run-astar [a-map goals]
+  (let
+    [
+     stations (clojure.string/split goals #",")
+     ]
+    (println (first stations))
+    (println (first (rest stations)))
+    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) a-map)
+    )
+  )
+
 (defn plan-route [planner-ss goal a*map ]
   (let [
         plannerout (plan planner-ss goal ops)
@@ -45,17 +56,6 @@
     )
   )
 
-(defn run-astar [a-map goals]
-  (let
-    [
-     stations (clojure.string/split goals #",")
-     ]
-    (println (first stations))
-    (println (first (rest stations)))
-    (A*search {:state (symbol (first stations)), :cost 0} (fn [x] (= x (symbol (first (rest stations))))) a-map)
-    )
-  )
-
 
 
 (defn planner-test-small-ss []
@@ -87,4 +87,12 @@
   (println "Scaletest-Start-State-ten"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)) ops)))
   (println "Scaletest-Start-State-eleven"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)) ops)))
   (println "Scaletest-Start-State-twelve"(:cmd (plan-multiple ss-scaletest '((cas cargo-one station-five)(cas cargo-two station-six)(cas cargo-three station-seven)(cas cargo-four station-eight)(cas cargo-five station-nine)(cas cargo-six station-ten)(cas cargo-seven station-eleven)(cas cargo-eight station-twelve)(cas cargo-nine station-one)(cas cargo-ten station-two)(cas cargo-eleven station-three)(cas cargo-twelve station-four)) ops)))
+  )
+
+(defn planner-a*-examples-single-goals []
+  (plan-route ss-one '(cas cargo-one station-two) map1)
+  )
+
+(defn planner-a*-examples-multiple-goals []
+  (plan-route ss-one '(cas cargo-one station-two) map1)
   )

@@ -9,9 +9,9 @@
                  (cargo ?cargo)
                  (cot ?train nil)
                  (tas ?train ?stn)
-                 (cat ?cargo  ?stn))
+                 (cas ?cargo  ?stn))
           :add ((cot ?train ?cargo))
-          :del ((cat ?cargo ?stn)
+          :del ((cas ?cargo ?stn)
                  (cot ?train nil))
           :txt (?train loads ?cargo at ?stn)
           :cmd [load ?cargo]}
@@ -20,7 +20,7 @@
                     (tas ?train ?stn)
                     (:guard (? cargo)))
             :add ((cot ?train nil)
-                   (cat ?cargo  ?stn))
+                   (cas ?cargo  ?stn))
             :del ((cot ?train ?cargo))
             :txt (?train unloads ?cargo at ?stn)
             :cmd [unload ?cargo]}
@@ -49,9 +49,9 @@
 (def state1
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s3)})
+     (cas c1 s3)})
 
-; user=> (ops-search state1 '((cat c1 s2)) ops :world world-one)
+; user=> (ops-search state1 '((cas c1 s2)) ops :world world-one)
 
 
 ; 2
@@ -68,9 +68,9 @@
 (def state2
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s1)})
+     (cas c1 s1)})
 
-; user=> (ops-search state2 '((cat c1 s2)) ops :world world-two)
+; user=> (ops-search state2 '((cas c1 s2)) ops :world world-two)
 
 
 ; 3
@@ -90,9 +90,9 @@
 (def state3
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s2)})
+     (cas c1 s2)})
 
-; user=> (ops-search state3 '((cat c1 s4)) ops :world world-three)
+; user=> (ops-search state3 '((cas c1 s4)) ops :world world-three)
 
 
 ; 4
@@ -108,10 +108,10 @@
 (def state4
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s3)
-     (cat c2 s4)})
+     (cas c1 s3)
+     (cas c2 s4)})
 
-; user=> (ops-search state4 '((cat c1 s2)(cat c2 s2)) ops :world world-four)
+; user=> (ops-search state4 '((cas c1 s2)(cas c2 s2)) ops :world world-four)
 
 
 ; 5
@@ -131,10 +131,10 @@
      (tas t2 t5)
      (cot t1 nil)
      (cot t2 nil)
-     (cat c1 s2)
-     (cat c2 s4)})
+     (cas c1 s2)
+     (cas c2 s4)})
 
-; user=> (ops-search state5 '((cat c1 s4)(cat c2 s2)) ops :world world-five)
+; user=> (ops-search state5 '((cas c1 s4)(cas c2 s2)) ops :world world-five)
 ; Only moves one of the 2 trains
 
 
@@ -151,10 +151,10 @@
 (def state6
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s3)
-     (cat c2 s4)})
+     (cas c1 s3)
+     (cas c2 s4)})
 
-; user=> (ops-search state6 '((cat c1 s2) (cat c2 s5)) ops :world world-six)
+; user=> (ops-search state6 '((cas c1 s2) (cas c2 s5)) ops :world world-six)
 ; nil - Does not attempt to move c1, will only return nil
 
 
@@ -172,9 +172,9 @@
 (def state7a
   '#{(tas t1 s3)
      (cot t1 nil)
-     (cat c1 s1)})
+     (cas c1 s1)})
 
-; user=> (ops-search state7a '((cat c1 s1)) ops :world world-seven-a)
+; user=> (ops-search state7a '((cas c1 s1)) ops :world world-seven-a)
 ; Goal state already achieved, no moves required
 
 
@@ -190,9 +190,9 @@
 (def state7b
   '#{(tas t1 s3)
      (cot t1 nil)
-     (cat c1 s1)})
+     (cas c1 s1)})
 
-; user=> (ops-search state7b '((cat c1 s1)) ops :world world-seven-b)
+; user=> (ops-search state7b '((cas c1 s1)) ops :world world-seven-b)
 ; Goal state already achieved, no moves required
 
 
@@ -207,9 +207,9 @@
      })
 
 (def state8
-  '#{(cat c1 s3)})
+  '#{(cas c1 s3)})
 
-; user=> (ops-search state8 '((cat c1 s4)) ops :world world-eight)
+; user=> (ops-search state8 '((cas c1 s4)) ops :world world-eight)
 ; nil - No train to move the cargo
 
 
@@ -232,11 +232,11 @@
      })
 
 (def state9
-  '#{(cat c1 s12)
+  '#{(cas c1 s12)
      (tas t1 s1)
      (cot t1 nil)})
 
-; user=> (ops-search state9 '((cat c1 s11)) ops :world world-nine)
+; user=> (ops-search state9 '((cas c1 s11)) ops :world world-nine)
 
 
 ;====================;
@@ -252,9 +252,9 @@
 (def state_1at
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s2)})
+     (cas c1 s2)})
 
-; user=> (ops-search state_1at '((cat c1 s1) (cat c2 s2b) (cat c3 s1)) ops :world world_1at)
+; user=> (ops-search state_1at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_1at)
 
 
 ; AT 2
@@ -269,9 +269,9 @@
 (def state_2at
   '#{(tas t1 s1)
      (cot t1 nil)
-     (cat c1 s3)})
+     (cas c1 s3)})
 
-; user=> (ops-search state_2at '((cat c1 s1) (cat c2 s2b) (cat c3 s1)) ops :world world_2at)
+; user=> (ops-search state_2at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_2at)
 
 
 ; AT 3
@@ -291,11 +291,11 @@
      (tas t2 s3)
      (cot t1 nil)
      (cot t2 nil)
-     (cat c1 s2b)
-     (cat c2 s3)
-     (cat c3 s3)})
+     (cas c1 s2b)
+     (cas c2 s3)
+     (cas c3 s3)})
 
-; user=> (ops-search state_3at '((cat c1 s1) (cat c2 s2b) (cat c3 s1)) ops :world world_3at)
+; user=> (ops-search state_3at '((cas c1 s1) (cas c2 s2b) (cas c3 s1)) ops :world world_3at)
 ; takes conciderable time
 ; however, works uses 2 trains
 
@@ -321,42 +321,74 @@
      (tas t2 s5)
      (cot t1 nil)
      (cot t2 nil)
-     (cat c1 s4b)
-     (cat c2 s4b)
-     (cat c3 s5)
-     (cat c4 s5)})
+     (cas c1 s4b)
+     (cas c2 s4b)
+     (cas c3 s5)
+     (cas c4 s5)})
 
-; user=> (ops-search state_4at '((cat c1 s1) (cat c2 s1) (cat c3 s2b) (cat c4 s2b)) ops :world world_4at)
+; user=> (ops-search state_4at '((cas c1 s1) (cas c2 s1) (cas c3 s2b) (cas c4 s2b)) ops :world world_4at)
 ; StackOverflowError
 
 
 
 
+;=============;
+;= Scaletest =;
+;=============;
 
-
-
-; SCALETESTING SMALL MAP
-
-(def world-scaletest-small-a
-  '#{(train t1)
-     (cargo c1)
+(def world-scaletest
+  '#{(cargo c1)
+     (cargo c2)
+     (cargo c3)
+     (cargo c4)
+     (cargo c5)
+     (cargo c6)
+     (cargo c7)
+     (cargo c8)
+     (cargo c9)
+     (cargo c10)
+     (cargo c11)
+     (cargo c12)
+     (train t1)
      (links s1 s2) (links s2 s1)
-     (links s3 s1) (links s1 s3)
-     (links s3 s2) (links s2 s3)
-     (links s1 s4) (links s4 s1)
+     (links s2 s3) (links s3 s2)
      (links s3 s4) (links s4 s3)
-     (links s5 s4) (links s4 s5)
-     (links s5 s2) (links s2 s5)
-     (links s3 s5) (links s5 s3)
+     (links s4 s5) (links s5 s4)
+     (links s5 s5)
+     (links s4 s6) (links s6 s4)
+     (links s6 s7) (links s7 s6)
+     (links s7 s8) (links s8 s7)
+     (links s8 s9) (links s9 s8)
+     (links s8 s10) (links s10 s8)
+     (links s10 s11) (links s11 s10)
+     (links s10 s12) (links s12 s10)
      })
 
-(def state3
+(def ss-scaletest
   '#{(tas t1 s1)
-     (cot t1 nil)
-     (cat c1 s2)})
+     (cas c1 s1)
+     (cas c2 s2)
+     (cas c3 s3)
+     (cas c4 s4)
+     (cas c5 s5)
+     (cas c6 s6)
+     (cas c7 s7)
+     (cas c8 s8)
+     (cas c9 s9)
+     (cas c10 s10)
+     (cas c11 s11)
+     (cas c12 s12)
+     (cot t1 nil)})
 
-; user=> (ops-search state3 '((cat c1 s4)) ops :world world-scaletest-small-a)
-
-
-
-
+; user=> (ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)) ops :world world-scaletest)
+; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest)
