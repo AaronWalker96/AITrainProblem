@@ -380,15 +380,4 @@
      (cas c12 s12)
      (cot t1 nil)})
 
-; user=> (ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)) ops :world world-scaletest)
-; user=> (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest)
+

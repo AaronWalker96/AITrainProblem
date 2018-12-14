@@ -5,6 +5,7 @@
 (require 'search.planner)
 (require 'ourastarsearch)
 (require 'plannertest)
+(require 'opsearchtesting)
 
 ;(plan-route ss-one '(cas cargo-one station-two) map1)
 
@@ -56,13 +57,11 @@
     )
   )
 
-
-
-(defn planner-test-small-ss []
+(defn planner-only-test-small-ss []
   (println "Start-State-one"(:cmd (plan ss-one '(cas cargo-one station-two ) ops)))
   (println "Start-State-two" (:cmd (plan ss-two '(cas cargo-one station-two ) ops)))
   (println "Start-State-three" (:cmd (plan ss-three '(cas cargo-one station-four ) ops)))
-  (println "Start-State-four" (:cmd (plan ss-three '(cas cargo-one station-four ) ops)))
+  (println "Start-State-four" (:cmd (plan-multiple ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) ops)))
   (println "Start-State-five" (:cmd (plan-multiple ss-five '((cas cargo-one station-four)(cas cargo-two station-two)) ops)))
   (println "Start-State-six" (:cmd (plan-multiple ss-six '((cas cargo-one station-two)(cas cargo-two station-five)) ops)))
   (println "Start-State-seven" (:cmd (plan ss-seven '(cas cargo-one station-one) ops)))
@@ -70,7 +69,7 @@
   (println "Start-State-nine" (:cmd (plan ss-nine '(cas cargo-one station-eleven) ops)))
   )
 
-(defn planner-test-large-ss []
+(defn planner-only-test-large-ss []
   (println "Start-State-twelve"(:cmd (plan-multiple ss-twelve '((cas llama station-newcastle)(cas scottish-notes station-edinburgh)(cas neds station-brighton)(cas sheep station-edinburgh)(cas brenda station-bristol)(cas cheese station-york) ) ops)))
   )
 
@@ -91,8 +90,31 @@
 
 (defn planner-a*-examples-single-goals []
   (plan-route ss-one '(cas cargo-one station-two) map1)
+  (plan-route ss-two '(cas cargo-one station-two) map2)
+  (plan-route ss-three '(cas cargo-one station-four) map3)
+  (plan-route ss-seven '(cas cargo-one station-one) map7)
+  (plan-route ss-eight '(cas cargo-one station-four) map8)
+  (plan-route ss-nine '(cas cargo-one station-eleven) map9)
   )
 
 (defn planner-a*-examples-multiple-goals []
-  (plan-route ss-one '(cas cargo-one station-two) map1)
+  (plan-route-multiple-goals ss-four '((cas cargo-one station-two)(cas cargo-two station-two)) map4)
+  (plan-route-multiple-goals ss-five '((cas cargo-one station-four)(cas cargo-two station-two)) map5)
+  (plan-route-multiple-goals ss-six '((cas cargo-one station-two)(cas cargo-two station-five))  map6)
+  )
+
+;;This test will always fail due to a StackOverflowError when testing scaling in ops
+(defn ops-scale-test-all []
+  (println (ops-search ss-scaletest '((cas c1 s5)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)) ops :world world-scaletest))
+  (println (ops-search ss-scaletest '((cas c1 s5)(cas c2 s6)(cas c3 s7)(cas c4 s8)(cas c5 s9)(cas c6 s10)(cas c7 s11)(cas c8 s12)(cas c9 s1)(cas c10 s2)(cas c11 s3)(cas c12 s4)) ops :world world-scaletest))
   )
