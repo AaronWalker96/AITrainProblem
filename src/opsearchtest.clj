@@ -160,7 +160,6 @@
 
 ; 7a
 ; Start state = Goal state
-; *Unapplicable?*
 (def world7a
   '#{(train t1)
      (cargo c1)
@@ -180,7 +179,6 @@
 
 ; 7b
 ; Start state = Goal state
-; *Unapplicable?*
 (def world7b
   '#{(train t1)
      (cargo c1)
@@ -201,6 +199,7 @@
   '#{(cargo c1)
      (links s1 s2) (links s2 s1)
      (links s2 s3) (links s3 s2)
+     (links s3 s4) (links s4 s3)
      (links s4 s5) (links s5 s4)
      (links s5 s1) (links s1 s5)
      })
@@ -209,7 +208,7 @@
   '#{(cat c1 s3)})
 
 ; user=> (ops-search state8 '((cat c1 s4)) ops :world world8)
-; nil
+; nil - No train to move the cargo
 
 
 ; 9
@@ -218,8 +217,8 @@
      (train t1)
      (links s1 s2) (links s2 s1)
      (links s2 s3) (links s3 s2)
+     (links s3 s4) (links s4 s3)
      (links s4 s5) (links s5 s4)
-     (links s5 s1) (links s1 s5)
      (links s5 s5)
      (links s4 s6) (links s6 s4)
      (links s6 s7) (links s7 s6)
